@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partner Network | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="How DICE coordinates appropriate specialist capabilities — engineering, fabrication, machining, specialist processes and manpower — through a single customer interface."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Partner Network</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">The DICE ecosystem</p>
+          <h1 id="page-title">
+            Capability coordinated to suit the project
+          </h1>
+          <p>
+            DICE coordinates appropriate specialist capabilities according to
+            project requirements, scope, availability and agreed arrangements.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Submit Your Requirement</a
+            >
+            <a class="btn btn--ghost-light" href="#network">Explore the network</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Interactive network map ================= -->
+      <section
+        class="section section--dark"
+        id="network"
+        aria-labelledby="network-title"
+      >
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--center">Interactive diagram</p>
+            <h2 id="network-title">
+              Select a node to see what that capability covers
+            </h2>
+            <p class="lead">
+              DICE sits at the centre as the coordination hub. The customer and
+              the project enter through one interface, and the capability areas
+              are engaged according to what the requirement actually needs.
+            </p>
+          </div>
+
+          <div class="netmap-wrap">
+            <div
+              class="netmap"
+              role="tablist"
+              aria-label="DICE partner network capability areas"
+              data-tablist
+            >
+              <!-- Connector layer. viewBox 0 0 100 100 with
+                   preserveAspectRatio="none" makes SVG units equal percentages,
+                   so the lines always meet the buttons at any screen size. -->
+              <svg
+                class="netmap__lines"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <line class="netmap__line" data-line="engineering"
+                      x1="50" y1="50" x2="17" y2="22" />
+                <line class="netmap__line" data-line="fabrication"
+                      x1="50" y1="50" x2="50" y2="10" />
+                <line class="netmap__line" data-line="machining"
+                      x1="50" y1="50" x2="83" y2="22" />
+                <line class="netmap__line" data-line="specialist"
+                      x1="50" y1="50" x2="83" y2="78" />
+                <line class="netmap__line" data-line="manpower"
+                      x1="50" y1="50" x2="50" y2="90" />
+                <line class="netmap__line" data-line="customer"
+                      x1="50" y1="50" x2="17" y2="78" />
+              </svg>
+
+              <span class="netmap__ring netmap__ring--inner" aria-hidden="true"></span>
+              <span class="netmap__ring netmap__ring--outer" aria-hidden="true"></span>
+
+              <div class="netmap__hub" aria-hidden="true">
+                <span class="wordmark__name">DICE</span>
+                <span>Coordination hub</span>
+              </div>
+
+              <button
+                class="netmap__node"
+                style="--x: 17; --y: 22"
+                role="tab"
+                type="button"
+                id="node-engineering-tab"
+                aria-controls="node-engineering-panel"
+                aria-selected="true"
+                data-lights="engineering"
+              >
+                <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+                <span>
+                  <strong>Engineering</strong>
+                  <small>Design, drafting, documentation</small>
+                </span>
+              </button>
+
+              <button
+                class="netmap__node"
+                style="--x: 50; --y: 10"
+                role="tab"
+                type="button"
+                id="node-fabrication-tab"
+                aria-controls="node-fabrication-panel"
+                aria-selected="false"
+                data-lights="fabrication"
+              >
+                <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                <span>
+                  <strong>Fabrication</strong>
+                  <small>Spools, bends, structures</small>
+                </span>
+              </button>
+
+              <button
+                class="netmap__node"
+                style="--x: 83; --y: 22"
+                role="tab"
+                type="button"
+                id="node-machining-tab"
+                aria-controls="node-machining-panel"
+                aria-selected="false"
+                data-lights="machining"
+              >
+                <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+                <span>
+                  <strong>Machining</strong>
+                  <small>CNC, milling, waterjet</small>
+                </span>
+              </button>
+
+              <button
+                class="netmap__node"
+                style="--x: 83; --y: 78"
+                role="tab"
+                type="button"
+                id="node-specialist-tab"
+                aria-controls="node-specialist-panel"
+                aria-selected="false"
+                data-lights="specialist"
+              >
+                <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+                <span>
+                  <strong>Specialist Processes</strong>
+                  <small>Welding, forming, cutting</small>
+                </span>
+              </button>
+
+              <button
+                class="netmap__node"
+                style="--x: 50; --y: 90"
+                role="tab"
+                type="button"
+                id="node-manpower-tab"
+                aria-controls="node-manpower-panel"
+                aria-selected="false"
+                data-lights="manpower"
+              >
+                <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+                <span>
+                  <strong>Manpower</strong>
+                  <small>Trades, NDE, designers</small>
+                </span>
+              </button>
+
+              <button
+                class="netmap__node netmap__node--customer"
+                style="--x: 17; --y: 78"
+                role="tab"
+                type="button"
+                id="node-customer-tab"
+                aria-controls="node-customer-panel"
+                aria-selected="false"
+                data-lights="customer"
+              >
+                <i class="icon" data-lucide="briefcase" aria-hidden="true"></i>
+                <span>
+                  <strong>Customer / Project</strong>
+                  <small>Single interface, one scope owner</small>
+                </span>
+              </button>
+            </div>
+
+            <!-- Node detail panels. Without JS all six read as a plain list. -->
+            <div class="node-panels">
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-engineering-panel"
+                aria-labelledby="node-engineering-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--light icon-badge--sm">
+                    <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+                  </span>
+                  <h3>Engineering</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    Design, drafting, 3D modelling, analysis and manufacturing
+                    documentation. This is where a requirement becomes something
+                    a workshop can actually build from, and where technical
+                    review happens before any route is selected.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">Typical scope</p>
+                    <ul class="tick-list mt-4">
+                      <li>2D drafting and manufacturing drawings</li>
+                      <li>Conceptual design and 3D modelling</li>
+                      <li>Jig and fixture design</li>
+                      <li>FEA analysis where it is in scope</li>
+                    </ul>
+                    <a
+                      class="link-arrow mt-5"
+                      href="services.html#engineering-cad"
+                      >Engineering &amp; CAD capability</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-fabrication-panel"
+                aria-labelledby="node-fabrication-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--light icon-badge--sm">
+                    <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                  </span>
+                  <h3>Fabrication</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    Fabricated assemblies, pipe spools, bends, structural
+                    members and fixtures produced to drawing and specification,
+                    with the weld and material records the scope calls for.
+                    Routing depends on material, size and inspection standard.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">Typical scope</p>
+                    <ul class="tick-list mt-4">
+                      <li>Process equipment and fabricated assemblies</li>
+                      <li>Pipe spools and bends</li>
+                      <li>Structural and process equipment</li>
+                      <li>NDE scope where applicable</li>
+                    </ul>
+                    <a class="link-arrow mt-5" href="services.html#fabrication"
+                      >Fabrication capability</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-machining-panel"
+                aria-labelledby="node-machining-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--light icon-badge--sm">
+                    <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+                  </span>
+                  <h3>Machining</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    Close-tolerance component manufacture. Tolerance, surface
+                    finish, material and quantity decide which machining or
+                    cutting route suits the part, which is why those are
+                    confirmed during technical review rather than assumed.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">Typical scope</p>
+                    <ul class="tick-list mt-4">
+                      <li>Precision CNC turning and milling</li>
+                      <li>Waterjet cutting</li>
+                      <li>Heavy-thickness cutting</li>
+                      <li>Specialist machining</li>
+                    </ul>
+                    <a
+                      class="link-arrow mt-5"
+                      href="services.html#precision-manufacturing"
+                      >Precision Manufacturing capability</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-specialist-panel"
+                aria-labelledby="node-specialist-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--light icon-badge--sm">
+                    <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+                  </span>
+                  <h3>Specialist Processes</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    The processes that turn material and drawings into finished
+                    work. Method selection follows the material, geometry and
+                    applicable standard, and the personnel carrying it out are
+                    qualified for the joint or operation involved.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">Typical scope</p>
+                    <ul class="tick-list mt-4">
+                      <li>Welding to the applicable standard</li>
+                      <li>Laser and plasma profile cutting</li>
+                      <li>Pipe cutting and end preparation</li>
+                      <li>Induction and cold bends</li>
+                    </ul>
+                    <a
+                      class="link-arrow mt-5"
+                      href="services.html#specialist-execution"
+                      >Specialist Execution capability</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-manpower-panel"
+                aria-labelledby="node-manpower-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--light icon-badge--sm">
+                    <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+                  </span>
+                  <h3>Manpower</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    Where a project needs skilled people rather than a
+                    manufactured item. Trades and technical personnel are
+                    matched to the discipline, qualification, duration and
+                    location the work requires.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">Typical scope</p>
+                    <ul class="tick-list mt-4">
+                      <li>Welders and fitters</li>
+                      <li>Designers</li>
+                      <li>NDE personnel</li>
+                      <li>Project-specific and overseas support</li>
+                    </ul>
+                    <a
+                      class="link-arrow mt-5"
+                      href="manpower-international.html"
+                      >Manpower &amp; international support</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="node-panel"
+                role="tabpanel"
+                id="node-customer-panel"
+                aria-labelledby="node-customer-tab"
+                tabindex="0"
+              >
+                <div class="node-panel__head">
+                  <span class="icon-badge icon-badge--orange icon-badge--sm">
+                    <i class="icon" data-lucide="briefcase" aria-hidden="true"></i>
+                  </span>
+                  <h3>Customer / Project</h3>
+                </div>
+                <div class="node-panel__grid">
+                  <p>
+                    The entry point, and the reason the rest of the diagram
+                    exists. Every capability area above is reached through one
+                    DICE interface, so the customer is not left managing the
+                    seams between separate suppliers.
+                  </p>
+                  <div>
+                    <p class="subhead mt-0">What this means in practice</p>
+                    <ul class="tick-list mt-4">
+                      <li>One contact for the whole requirement</li>
+                      <li>One agreed scope definition</li>
+                      <li>Interfaces owned by DICE, not assumed</li>
+                      <li>Documentation coordinated in one place</li>
+                    </ul>
+                    <a class="link-arrow mt-5" href="how-it-works.html"
+                      >See the five-step process</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="network__note">
+              Simplified illustration of coordination routes. Specific partners
+              and arrangements depend on each project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Local / international / one interface ========= -->
+      <section
+        class="section"
+        id="linkage"
+        aria-labelledby="linkage-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">The operating idea</p>
+            <h2 id="linkage-title">
+              Local Specialists. International Linkage. One DICE Interface.
+            </h2>
+            <p class="lead">
+              Three ideas that describe how the network is meant to work —
+              capability close to the work, reach when a requirement needs it,
+              and a single interface holding it together.
+            </p>
+          </div>
+
+          <div class="grid grid--3 grid--gap-lg" data-reveal-group>
+            <article class="card reveal">
+              <div class="card__body">
+                <span class="icon-badge">
+                  <i class="icon" data-lucide="map-pin" aria-hidden="true"></i>
+                </span>
+                <h3>Local Specialists</h3>
+                <p>
+                  Much engineering and fabrication work is best done close to
+                  where it is needed. Shorter logistics, easier inspection
+                  visits, and faster response when something has to be checked
+                  in person.
+                </p>
+                <p>
+                  DICE coordinates capability that suits the scope and the
+                  location, rather than forcing work through one fixed facility.
+                </p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <span class="icon-badge">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                </span>
+                <h3>International Linkage</h3>
+                <p>
+                  Some requirements reach past what is available locally — a
+                  process, a size envelope, a material or a trade that has to be
+                  sourced further afield.
+                </p>
+                <p>
+                  Where a requirement calls for it, DICE can coordinate
+                  cross-border support, subject to the arrangements, approvals
+                  and documentation applicable to that particular project.
+                </p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <span class="icon-badge icon-badge--orange">
+                  <i class="icon" data-lucide="user-check" aria-hidden="true"></i>
+                </span>
+                <h3>One DICE Interface</h3>
+                <p>
+                  Whatever mix the work ends up needing, the customer keeps one
+                  conversation. Enquiry, technical clarification, progress and
+                  delivery coordination run through the same point of contact.
+                </p>
+                <p>
+                  Scope is defined once and carried into every downstream
+                  activity, so the seams between capabilities stay DICE's
+                  problem rather than the customer's.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="split mt-9">
+            <div class="split__content">
+              <p class="eyebrow">How capability gets engaged</p>
+              <h3>Selection follows the requirement, every time</h3>
+              <p>
+                There is no standing allocation of work. Each enquiry is
+                reviewed technically first, and the capability is then selected
+                against what that specific scope needs — process, material,
+                tolerance, standard, inspection and schedule.
+              </p>
+              <ul class="tick-list">
+                <li>Capability assessed per requirement, not per catalogue</li>
+                <li>
+                  Scope, interfaces and responsibilities confirmed before work
+                  starts
+                </li>
+                <li>
+                  Coordination, documentation and communication stay with DICE
+                </li>
+              </ul>
+              <div class="cluster mt-6">
+                <a class="btn btn--navy" href="how-it-works.html"
+                  >See the five-step process</a
+                >
+                <a class="link-arrow" href="services.html"
+                  >Browse capability categories</a
+                >
+              </div>
+            </div>
+            <div class="split__media">
+              <div class="media-frame">
+                <div class="media media--wide">
+                  <img
+                    src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1100&q=80"
+                    alt="Automated industrial assembly line with robotic equipment"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= What this page does not claim ================= -->
+      <section
+        class="section section--grey"
+        id="clarity"
+        aria-labelledby="clarity-title"
+      >
+        <div class="container container--narrow">
+          <div class="section-head">
+            <p class="eyebrow">Being precise about it</p>
+            <h2 id="clarity-title">What depends on the specific project</h2>
+            <p class="lead">
+              The network described on this page is a model for how capability
+              is coordinated. Almost everything concrete about it is decided per
+              project, and it is worth being explicit about that.
+            </p>
+          </div>
+
+          <div class="grid grid--2" data-reveal-group>
+            <div class="benefit reveal">
+              <span class="benefit__num" aria-hidden="true">01</span>
+              <div>
+                <h3>Partner selection</h3>
+                <p>
+                  Which capability is engaged depends on the reviewed scope. No
+                  supplier holds a standing claim on any category of work.
+                </p>
+              </div>
+            </div>
+            <div class="benefit reveal">
+              <span class="benefit__num" aria-hidden="true">02</span>
+              <div>
+                <h3>Availability</h3>
+                <p>
+                  Capacity is confirmed at enquiry stage against the programme.
+                  It is not held open or guaranteed in advance.
+                </p>
+              </div>
+            </div>
+            <div class="benefit reveal">
+              <span class="benefit__num" aria-hidden="true">03</span>
+              <div>
+                <h3>Scope and interfaces</h3>
+                <p>
+                  Boundaries between DICE, the customer and any engaged
+                  capability are defined for each project before work starts.
+                </p>
+              </div>
+            </div>
+            <div class="benefit reveal">
+              <span class="benefit__num" aria-hidden="true">04</span>
+              <div>
+                <h3>Commercial arrangements</h3>
+                <p>
+                  Terms, pricing basis and responsibilities are agreed per
+                  project. Nothing on this page is a commercial offer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="note mt-7">
+            <i class="icon" data-lucide="info" aria-hidden="true"></i>
+            <p>
+              <strong>No claims are made</strong> on this page about guaranteed
+              partnerships, approvals, endorsements, accreditations, named
+              vendors, or established international relationships. The capability
+              areas shown are categories of work that DICE coordinates, not a
+              directory of committed suppliers. Photography is illustrative of
+              capability types only.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Have an Engineering Requirement?</h2>
+            <p>
+              Share your project scope and let DICE coordinate an appropriate
+              technical and execution route.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Start Your Project
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="contact.html"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                     </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

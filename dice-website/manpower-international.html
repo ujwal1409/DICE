@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Manpower &amp; International Support | DICE Engineering &amp; Consultancy
+    </title>
+    <meta
+      name="description"
+      content="Skilled manpower support — welders, fitters, designers, NDE personnel and trade workers — organised according to customer-specific requirements, plus how international project support is assessed."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <span aria-current="page"
+                  >Manpower &amp; International Support</span
+                >
+              </li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Skilled people, organised to scope</p>
+          <h1 id="page-title">Manpower &amp; International Support</h1>
+          <p>
+            Welders, fitters, designers, NDE personnel and skilled trade
+            workers — organised according to customer-specific requirements and
+            project scope.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Discuss Your Requirement</a
+            >
+            <a class="btn btn--ghost-light" href="#workflow"
+              >India to Europe workflow</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Intro ================= -->
+      <section class="section" id="approach" aria-labelledby="approach-title">
+        <div class="container">
+          <div class="split" data-reveal-group>
+            <div class="split__content reveal">
+              <p class="eyebrow">How manpower support works</p>
+              <h2 id="approach-title">
+                Organised around the requirement, not held as a standing pool
+              </h2>
+              <p class="lead">
+                Manpower support is organised according to customer-specific
+                requirements and project scope. The trade, the qualification,
+                the duration and the location all come from the requirement
+                itself.
+              </p>
+              <p>
+                Some projects need a manufactured item. Others need people —
+                qualified welders on a shutdown, a fitter for an installation
+                window, a designer to clear a drawing backlog, or NDE personnel
+                to carry out an agreed inspection scope. Those are different
+                problems, and they are scoped differently.
+              </p>
+              <p>
+                DICE treats a manpower enquiry the same way as any other: the
+                requirement is reviewed technically first, then the appropriate
+                personnel are coordinated against what the work actually needs.
+              </p>
+              <ul class="tick-list">
+                <li>Trade and discipline matched to the task</li>
+                <li>
+                  Qualifications verified against the stated requirement
+                </li>
+                <li>Duration and location agreed before deployment</li>
+              </ul>
+              <div class="cluster mt-6">
+                <a class="btn btn--outline" href="services.html#manpower"
+                  >Manpower capability category</a
+                >
+                <a class="link-arrow" href="how-it-works.html"
+                  >How a requirement is reviewed</a
+                >
+              </div>
+            </div>
+
+            <div class="split__media reveal">
+              <div class="media-frame">
+                <div class="media media--tall">
+                  <img
+                    src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1100&q=80"
+                    alt="Worker in a hard hat and safety glasses working on an industrial control enclosure"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Personnel categories ================= -->
+      <section
+        class="section section--grey"
+        id="categories"
+        aria-labelledby="categories-title"
+      >
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--center">Personnel categories</p>
+            <h2 id="categories-title">The disciplines DICE coordinates</h2>
+            <p class="lead">
+              Five categories of skilled personnel. In every case the specific
+              qualification required is confirmed against the project before
+              anyone is deployed.
+            </p>
+          </div>
+
+          <div class="autogrid" data-reveal-group>
+            <article class="trade reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+              </span>
+              <h3>Welders</h3>
+              <p>
+                Welding personnel for fabrication and site work, with the
+                qualification matched to the joint, process and applicable
+                standard for the scope.
+              </p>
+              <p class="trade__meta">Qualification confirmed per project</p>
+            </article>
+
+            <article class="trade reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="wrench" aria-hidden="true"></i>
+              </span>
+              <h3>Fitters</h3>
+              <p>
+                Mechanical fitters for assembly, fit-up and installation work,
+                including support during shutdowns and defined installation
+                windows.
+              </p>
+              <p class="trade__meta">Scope and duration agreed in advance</p>
+            </article>
+
+            <article class="trade reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+              </span>
+              <h3>Designers</h3>
+              <p>
+                Drafting and design personnel to support drawing production,
+                3D modelling and manufacturing documentation alongside an
+                existing engineering team.
+              </p>
+              <p class="trade__meta">Software capability stated up front</p>
+            </article>
+
+            <article class="trade reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="scan-line" aria-hidden="true"></i>
+              </span>
+              <h3>NDE personnel</h3>
+              <p>
+                Non-destructive examination personnel for an agreed inspection
+                scope, with the methods and extent defined before the work
+                begins.
+              </p>
+              <p class="trade__meta">Method and extent defined per scope</p>
+            </article>
+
+            <article class="trade reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+              </span>
+              <h3>Skilled trade workers</h3>
+              <p>
+                Additional trades supporting fabrication, installation and
+                general industrial work where a project needs capacity rather
+                than a specific specialism.
+              </p>
+              <p class="trade__meta">Matched to the task and site conditions</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= How deployment is organised ================= -->
+      <section
+        class="section"
+        id="deployment"
+        aria-labelledby="deployment-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">What gets settled first</p>
+            <h2 id="deployment-title">
+              Four things that need an answer before anyone travels
+            </h2>
+            <p class="lead">
+              Manpower work goes wrong in predictable ways — unclear scope,
+              unverified qualifications, missing paperwork, or assumptions about
+              what a destination requires. Each gets addressed explicitly.
+            </p>
+          </div>
+
+          <div class="autogrid--wide autogrid" data-reveal-group>
+            <article class="card reveal" id="project-deployment">
+              <div class="card__body">
+                <span class="icon-badge icon-badge--sm">
+                  <i
+                    class="icon"
+                    data-lucide="clipboard-list"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+                <h3>Project-specific deployment</h3>
+                <p>
+                  Personnel are mobilised against a defined scope rather than an
+                  open-ended arrangement. The number of people, the trades, the
+                  start date and the expected duration are agreed before
+                  deployment.
+                </p>
+                <ul class="tick-list">
+                  <li>Trades and headcount defined</li>
+                  <li>Start date and duration agreed</li>
+                  <li>Reporting lines and site contact confirmed</li>
+                  <li>Timesheet and progress reporting arrangements set</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card reveal" id="qualifications">
+              <div class="card__body">
+                <span class="icon-badge icon-badge--sm">
+                  <i class="icon" data-lucide="award" aria-hidden="true"></i>
+                </span>
+                <h3>Qualification requirements</h3>
+                <p>
+                  The qualification a role actually requires is stated by the
+                  customer or derived from the applicable standard, then
+                  verified against the individual before deployment.
+                </p>
+                <ul class="tick-list">
+                  <li>
+                    Requirement stated in writing, not inferred
+                  </li>
+                  <li>
+                    Welder qualification matched to process and joint
+                  </li>
+                  <li>
+                    NDE qualification matched to method and level required
+                  </li>
+                  <li>
+                    Validity dates checked against the deployment window
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card reveal" id="documentation">
+              <div class="card__body">
+                <span class="icon-badge icon-badge--sm">
+                  <i class="icon" data-lucide="folder" aria-hidden="true"></i>
+                </span>
+                <h3>Documentation requirements</h3>
+                <p>
+                  Every deployment carries a paperwork requirement, and it
+                  varies by customer, site and destination. It is identified at
+                  enquiry stage rather than discovered at a gate.
+                </p>
+                <ul class="tick-list">
+                  <li>
+                    Qualification and training records
+                  </li>
+                  <li>Site induction and access documentation</li>
+                  <li>
+                    Medical or fitness requirements where the site demands them
+                  </li>
+                  <li>
+                    Records required for the destination, where applicable
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card reveal" id="overseas">
+              <div class="card__body">
+                <span class="icon-badge icon-badge--orange icon-badge--sm">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                </span>
+                <h3>Overseas requirements</h3>
+                <p>
+                  Work outside the home country introduces obligations that have
+                  nothing to do with engineering — and everything to do with
+                  whether the deployment is possible at all.
+                </p>
+                <ul class="tick-list">
+                  <li>
+                    Destination-country obligations assessed case by case
+                  </li>
+                  <li>
+                    Qualification recognition checked for the destination
+                  </li>
+                  <li>
+                    Documentation and compliance obligations identified early
+                  </li>
+                  <li>
+                    Feasibility confirmed before anything is committed
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= European vendor collaboration ================= -->
+      <section
+        class="section section--dark"
+        id="europe"
+        aria-labelledby="europe-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__content">
+              <p class="eyebrow">A potential area of support</p>
+              <h2 id="europe-title">European vendor collaboration</h2>
+              <p class="lead">
+                Collaboration with European vendors is a potential area of
+                support that DICE is positioned to explore where a customer
+                requirement calls for it.
+              </p>
+              <p>
+                The logic is straightforward. Engineering and manufacturing
+                capability in India can support European vendors and projects,
+                and European vendors may need coordinated engineering,
+                fabrication or manpower support that is organised locally and
+                delivered against their standards and documentation
+                requirements.
+              </p>
+              <p>
+                Whether that is workable for any given project depends entirely
+                on the specifics — the destination, the standards in play, the
+                compliance obligations, and whether suitable capability is
+                available for the programme. Those questions get answered during
+                technical review, not assumed in advance.
+              </p>
+
+              <div class="statement statement--dark mt-6">
+                <p>
+                  A potential area of support — assessed per requirement, not a
+                  standing arrangement.
+                </p>
+                <cite>How to read this section</cite>
+              </div>
+            </div>
+
+            <div class="split__media">
+              <div class="media media--wide">
+                <img
+                  src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1100&q=80"
+                  alt="Large construction project with tower cranes against an overcast sky"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="note note--dark mt-5">
+                <i class="icon" data-lucide="info" aria-hidden="true"></i>
+                <p>
+                  No European vendor relationship, agreement or project is
+                  claimed as established or confirmed. This section describes an
+                  area of interest and potential support, nothing more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= India to Europe workflow ================= -->
+      <section
+        class="section"
+        id="workflow"
+        aria-labelledby="workflow-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Indicative workflow</p>
+            <h2 id="workflow-title">
+              Engineering / Sourcing → Manufacturing / Execution → Overseas
+              Support
+            </h2>
+            <p class="lead">
+              A simplified view of how an international requirement could be
+              structured. Each stage is only reached once the preceding one has
+              been agreed.
+            </p>
+          </div>
+
+          <div class="flow flow--3" data-reveal-group>
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 01</span>
+              <h3>Engineering / Sourcing</h3>
+              <p>
+                Requirement reviewed, design intent established, and the
+                engineering or sourcing route defined. Standards, documentation
+                expectations and acceptance criteria are identified here.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 02</span>
+              <h3>Manufacturing / Execution</h3>
+              <p>
+                Appropriate manufacturing, fabrication or execution capability
+                is coordinated against the agreed scope, with inspection and
+                documentation collected as the work proceeds.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 03</span>
+              <h3>Overseas Support</h3>
+              <p>
+                Where the requirement extends beyond the point of manufacture,
+                support at the destination is assessed and coordinated subject
+                to the obligations applicable to that country and customer.
+              </p>
+            </article>
+          </div>
+
+          <div class="split mt-9">
+            <div class="split__content">
+              <p class="eyebrow">Before any international scope is committed</p>
+              <h3>Five things that have to be assessed</h3>
+              <p>
+                International projects cannot be quoted from a template. Each
+                one has to be assessed against the following, and any of them
+                can change whether the work is viable.
+              </p>
+              <div class="cluster mt-6">
+                <a class="btn btn--navy" href="request-quote.html"
+                  >Discuss an international requirement</a
+                >
+              </div>
+            </div>
+
+            <div class="split__media">
+              <ul class="checklist">
+                <li>
+                  <i class="icon" data-lucide="map-pin" aria-hidden="true"></i>
+                  <span>
+                    <strong>Destination country</strong>
+                    <span>
+                      Where the work or the personnel are going, and what that
+                      location requires.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="briefcase" aria-hidden="true"></i>
+                  <span>
+                    <strong>Customer requirements</strong>
+                    <span>
+                      Standards, specifications, approvals and reporting the
+                      customer expects.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="scale" aria-hidden="true"></i>
+                  <span>
+                    <strong>Applicable compliance obligations</strong>
+                    <span>
+                      The regulatory and contractual obligations that attach to
+                      that destination and scope.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="award" aria-hidden="true"></i>
+                  <span>
+                    <strong>Required qualifications and documentation</strong>
+                    <span>
+                      Which qualifications are recognised, and what paperwork
+                      must exist before mobilisation.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  <span>
+                    <strong>Partner capabilities and availability</strong>
+                    <span>
+                      Whether suitable capability exists and is actually free
+                      for the programme.
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= What is not claimed ================= -->
+      <section
+        class="section section--grey"
+        id="no-claims"
+        aria-labelledby="no-claims-title"
+      >
+        <div class="container container--narrow">
+          <div class="limits">
+            <div class="limits__head">
+              <i class="icon" data-lucide="alert-triangle" aria-hidden="true"></i>
+              <h3 id="no-claims-title">What this page does not claim</h3>
+            </div>
+            <p>
+              This page describes how manpower and international support would
+              be organised and assessed. It is deliberately explicit about what
+              is <em>not</em> being stated:
+            </p>
+            <ul>
+              <li>
+                No overseas deployment, project or contract is claimed as
+                confirmed, completed or in progress.
+              </li>
+              <li>
+                No partnership, vendor relationship or international agreement is
+                claimed as established.
+              </li>
+              <li>
+                No work permits, visas, sponsorship arrangements or immigration
+                approvals are claimed to be held or guaranteed.
+              </li>
+              <li>
+                No overseas offices, branches or registered entities are
+                claimed.
+              </li>
+              <li>
+                No guaranteed international deployment capability is offered.
+                Feasibility is assessed per requirement.
+              </li>
+              <li>
+                No certifications or accreditations are claimed for DICE,
+                partners or personnel.
+              </li>
+            </ul>
+            <p>
+              Personnel availability, qualification validity, compliance
+              obligations and commercial terms are confirmed per project and
+              should be verified in writing before you rely on them.
+            </p>
+          </div>
+
+          <div class="cta-strip mt-7">
+            <div>
+              <h3>Have a manpower or international requirement?</h3>
+              <p>
+                Tell us the trade, the location, the duration and the
+                qualification standard, and it will be assessed properly.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="request-quote.html"
+              >Discuss Your Requirement</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Tell us what the project needs</h2>
+            <p>
+              Share the trades, qualifications, location and programme, and let
+              DICE assess an appropriate route for your requirement.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Discuss Your Requirement
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="contact.html"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                     </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

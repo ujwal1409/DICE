@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quality &amp; Safety | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="The DICE working principles — safety, quality, delivery, teamwork and innovation — and why project quality requirements should be defined and agreed before execution."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Quality &amp; Safety</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Working principles</p>
+          <h1 id="page-title">Quality &amp; Safety</h1>
+          <p>
+            Safety, Quality, Delivery, Teamwork and Innovation — the principles
+            applied to every coordinated scope, and the requirements that should
+            be agreed before any work starts.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Discuss Your Requirements</a
+            >
+            <a class="btn btn--ghost-light" href="#requirements"
+              >Quality requirements</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Intro ================= -->
+      <section class="section" id="approach" aria-labelledby="approach-title">
+        <div class="container container--narrow">
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--center">How DICE approaches it</p>
+            <h2 id="approach-title">
+              Principles are only useful if they change decisions
+            </h2>
+            <p class="lead">
+              These five principles are not decoration. They describe how an
+              enquiry is reviewed, how a capability is selected, what gets
+              agreed before execution, and what is checked at handover.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Five principles ================= -->
+      <section
+        class="section section--grey section--tight"
+        id="principles"
+        aria-labelledby="principles-title"
+      >
+        <div class="container">
+          <h2 class="visually-hidden" id="principles-title">
+            The five DICE principles
+          </h2>
+
+          <div class="principles-grid" data-reveal-group>
+            <!-- Safety -->
+            <article class="card pillar reveal" id="safety">
+              <div class="pillar__media">
+                <img
+                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80"
+                  alt="Worker in a hard hat and safety glasses working on an industrial control enclosure"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="icon-badge pillar__badge">
+                <i class="icon" data-lucide="shield-check" aria-hidden="true"></i>
+              </span>
+              <div class="card__body">
+                <h3>Safety</h3>
+                <p>
+                  Safe working practice is treated as a precondition of
+                  execution, not a box ticked afterwards. If a method cannot be
+                  carried out safely, it is the wrong method.
+                </p>
+                <ul class="tick-list">
+                  <li>Unsafe working environments are not accepted</li>
+                  <li>
+                    Access, handling and permit constraints raised at review
+                    stage
+                  </li>
+                  <li>
+                    Site activity planned around the conditions actually present
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Quality -->
+            <article class="card pillar reveal" id="quality">
+              <div class="pillar__media">
+                <img
+                  src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1000&q=80"
+                  alt="Precision cutting tools and drill bits laid out in a tool roll"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="icon-badge pillar__badge">
+                <i class="icon" data-lucide="award" aria-hidden="true"></i>
+              </span>
+              <div class="card__body">
+                <h3>Quality</h3>
+                <p>
+                  Quality requirements have to be defined before they can be
+                  met. What "acceptable" means for a product or a service is
+                  established up front, in writing, for both parties.
+                </p>
+                <ul class="tick-list">
+                  <li>Acceptance criteria agreed, not assumed</li>
+                  <li>Work checked against drawing and specification</li>
+                  <li>
+                    Inspection points identified before execution begins
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Delivery -->
+            <article class="card pillar reveal" id="delivery">
+              <div class="pillar__media">
+                <img
+                  src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1000&q=80"
+                  alt="Industrial process plant with pipework and structural steelwork"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="icon-badge pillar__badge">
+                <i class="icon" data-lucide="truck" aria-hidden="true"></i>
+              </span>
+              <div class="card__body">
+                <h3>Delivery</h3>
+                <p>
+                  Delivery is measured against the agreed customer requirement
+                  and scope — not against a convenient internal interpretation
+                  of it.
+                </p>
+                <ul class="tick-list">
+                  <li>Scope and delivery expectations agreed in writing</li>
+                  <li>Realistic commitments rather than optimistic ones</li>
+                  <li>Early notice when something changes</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Teamwork -->
+            <article class="card pillar reveal" id="teamwork">
+              <div class="pillar__media">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                  alt="Site team working together on steel reinforcement installation"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="icon-badge pillar__badge">
+                <i class="icon" data-lucide="users" aria-hidden="true"></i>
+              </span>
+              <div class="card__body">
+                <h3>Teamwork</h3>
+                <p>
+                  A coordinated model only works if the coordination is real.
+                  DICE, the customer and any engaged specialist capability work
+                  to one shared scope definition rather than three separate
+                  readings of the same drawing.
+                </p>
+                <ul class="tick-list">
+                  <li>
+                    Interfaces between DICE and specialist partners defined
+                    before work starts
+                  </li>
+                  <li>
+                    One scope definition carried into every downstream activity
+                  </li>
+                  <li>
+                    Problems surfaced through a single channel, not between
+                    suppliers
+                  </li>
+                  <li>
+                    Responsibility for the customer conversation stays with DICE
+                  </li>
+                </ul>
+                <a class="link-arrow" href="partner-network.html"
+                  >How the partner network is coordinated</a
+                >
+              </div>
+            </article>
+
+            <!-- Innovation -->
+            <article class="card pillar reveal" id="innovation">
+              <div class="pillar__media">
+                <img
+                  src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80"
+                  alt="Engineers working up a design concept on a technical drawing"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span class="icon-badge pillar__badge">
+                <i class="icon" data-lucide="lightbulb" aria-hidden="true"></i>
+              </span>
+              <div class="card__body">
+                <h3>Innovation</h3>
+                <p>
+                  Practical improvement rather than novelty for its own sake.
+                  The useful kind of innovation is usually a better process
+                  route, a simpler joint, or a design change that makes
+                  something buildable.
+                </p>
+                <ul class="tick-list">
+                  <li>
+                    Design intent improved where it helps manufacture
+                  </li>
+                  <li>
+                    Alternative process routes offered when they suit the
+                    requirement better
+                  </li>
+                  <li>
+                    Buildability considered while changes are still inexpensive
+                  </li>
+                  <li>
+                    Solutions aimed at the customer's actual problem
+                  </li>
+                </ul>
+                <a class="link-arrow" href="how-it-works.html"
+                  >See the engineering workflow</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Quality requirements ================= -->
+      <section
+        class="section section--dark"
+        id="requirements"
+        aria-labelledby="requirements-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Before anything is made</p>
+            <h2 id="requirements-title">
+              Quality Requirements Should Be Defined Before Execution.
+            </h2>
+            <p class="lead">
+              Most quality disputes are not really disagreements about
+              workmanship. They are disagreements about what was required in the
+              first place — discovered after the work is finished, when it is
+              expensive to resolve.
+            </p>
+          </div>
+
+          <div class="split">
+            <div class="split__content">
+              <p>
+                The practical answer is unglamorous: write the requirements down
+                before execution and agree them with everyone who will be held
+                to them. Depending on the project, that may include any of the
+                following.
+              </p>
+
+              <ul class="checklist checklist--dark mt-6">
+                <li>
+                  <i class="icon" data-lucide="file-text" aria-hidden="true"></i>
+                  <span>
+                    <strong>Quality plans</strong>
+                    <span>
+                      What will be controlled, by whom, and at which points in
+                      the sequence.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="search" aria-hidden="true"></i>
+                  <span>
+                    <strong>Inspection requirements</strong>
+                    <span>
+                      Which inspections apply, who witnesses them, and what is
+                      recorded.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="scan-line" aria-hidden="true"></i>
+                  <span>
+                    <strong>Non-destructive examination (NDE) scope</strong>
+                    <span>
+                      Which methods, applied to which joints, and to what
+                      extent — confirmed per project rather than assumed.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i class="icon" data-lucide="folder" aria-hidden="true"></i>
+                  <span>
+                    <strong>Documentation</strong>
+                    <span>
+                      Material traceability, weld records, test reports and the
+                      handover pack expected at completion.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <i
+                    class="icon"
+                    data-lucide="check-check"
+                    aria-hidden="true"
+                  ></i>
+                  <span>
+                    <strong>Acceptance criteria</strong>
+                    <span>
+                      The measurable basis on which the work will be judged
+                      complete and acceptable.
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="split__media">
+              <div class="statement statement--dark">
+                <p>
+                  Define it, agree it, then execute it — in that order.
+                </p>
+                <cite>The sequence that avoids rework</cite>
+              </div>
+
+              <div class="note note--dark mt-5">
+                <i class="icon" data-lucide="info" aria-hidden="true"></i>
+                <p>
+                  These requirements are discussed and agreed during
+                  <a href="how-it-works.html">technical review</a> — step two of
+                  the DICE process — before any capability is engaged and before
+                  execution begins.
+                </p>
+              </div>
+
+              <div class="stack mt-5">
+                <div class="stat">
+                  <span class="stat__label">Bring your requirements</span>
+                  <span class="stat__value">
+                    <a href="request-quote.html"
+                      >Submit scope and quality requirements</a
+                    >
+                  </span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Prefer to talk it through?</span>
+                  <span class="stat__value">
+                    <a href="tel:+917203050180">+91-7203050180</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-strip mt-9">
+            <div>
+              <h3>Have quality requirements to agree?</h3>
+              <p>
+                Send your quality plan, ITP or specification with the enquiry and
+                it will be reviewed alongside the technical scope.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="request-quote.html"
+              >Request a Quote</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= What is not claimed ================= -->
+      <section
+        class="section"
+        id="no-claims"
+        aria-labelledby="no-claims-title"
+      >
+        <div class="container container--narrow">
+          <div class="limits">
+            <div class="limits__head">
+              <i class="icon" data-lucide="alert-triangle" aria-hidden="true"></i>
+              <h3 id="no-claims-title">
+                What this page does not claim
+              </h3>
+            </div>
+            <p>
+              This page describes working principles and the requirements that
+              should be agreed before execution. It deliberately makes no claims
+              about the following:
+            </p>
+            <ul>
+              <li>
+                No certifications or accreditations are claimed for DICE or for
+                any partner.
+              </li>
+              <li>
+                No compliance with any specific named standard is asserted.
+                Where a standard applies to a scope, it is identified and agreed
+                for that project.
+              </li>
+              <li>
+                No quality management system registration, audit outcome or
+                third-party approval is stated.
+              </li>
+              <li>
+                No performance statistics, defect rates or on-time delivery
+                figures are published.
+              </li>
+            </ul>
+            <p>
+              Any certification, approval or standards compliance relevant to
+              your project should be confirmed in writing and independently
+              verified before you rely on it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Agree the requirements first</h2>
+            <p>
+              Share your scope, quality plan and acceptance criteria, and let
+              DICE review them before proposing a technical and execution route.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Discuss Your Requirements
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="contact.html"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+             </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services &amp; Capabilities | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="Engineering and CAD, fabrication, precision manufacturing, specialist execution, manpower and technical support — six capability categories coordinated by DICE Engineering and Consultancy."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Services</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Capabilities catalogue</p>
+          <h1 id="page-title">Six capability categories, one coordinated route</h1>
+          <p>
+            Engineering &amp; CAD, fabrication, precision manufacturing,
+            specialist execution, manpower and technical support — selected to
+            suit your specific requirement.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Request a Quote</a
+            >
+            <a class="btn btn--ghost-light" href="how-it-works.html"
+              >How It Works</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Filter toolbar ================= -->
+      <div class="catalogue-bar" id="catalogue-bar">
+        <div class="container catalogue-bar__inner">
+          <div
+            class="filters"
+            role="toolbar"
+            aria-label="Filter capability categories"
+            aria-controls="catalogue"
+            data-filter-group
+          >
+            <button type="button" data-filter="all" aria-pressed="true">
+              <i class="icon" data-lucide="layers" aria-hidden="true"></i>
+              All Capabilities
+            </button>
+            <button type="button" data-filter="engineering-cad" aria-pressed="false">
+              <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+              Engineering &amp; CAD
+            </button>
+            <button type="button" data-filter="fabrication" aria-pressed="false">
+              <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+              Fabrication
+            </button>
+            <button
+              type="button"
+              data-filter="precision-manufacturing"
+              aria-pressed="false"
+            >
+              <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+              Precision Manufacturing
+            </button>
+            <button
+              type="button"
+              data-filter="specialist-execution"
+              aria-pressed="false"
+            >
+              <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+              Specialist Execution
+            </button>
+            <button type="button" data-filter="manpower" aria-pressed="false">
+              <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+              Manpower
+            </button>
+            <button
+              type="button"
+              data-filter="technical-support"
+              aria-pressed="false"
+            >
+              <i class="icon" data-lucide="cpu" aria-hidden="true"></i>
+              Technical Support
+            </button>
+          </div>
+
+          <div class="catalogue-bar__meta">
+            <p class="mb-0">
+              Showing
+              <span class="catalogue-bar__count" data-catalogue-count>6</span>
+              of 6 categories
+            </p>
+            <button
+              class="btn btn--outline btn--sm"
+              type="button"
+              data-expand-all
+              aria-controls="catalogue"
+            >
+              <i class="icon" data-lucide="list" aria-hidden="true"></i>
+              <span data-expand-all-label>Expand all details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= Capability catalogue ================= -->
+      <div class="catalogue" id="catalogue" data-catalogue>
+        <!-- ===== Category A — Engineering & CAD ===== -->
+        <article
+          class="service-block"
+          id="engineering-cad"
+          data-category="engineering-cad"
+          aria-labelledby="engineering-cad-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1100&q=80"
+                    alt="Engineers working up a design concept on a technical drawing"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+                    Engineering &amp; CAD
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 01</p>
+                <h2 id="engineering-cad-title">Engineering &amp; CAD</h2>
+                <p class="lead">
+                  Design and documentation that production can actually build
+                  from — from first concept through to issued manufacturing
+                  drawings.
+                </p>
+                <p>
+                  Technical review happens here first. Scope, materials,
+                  tolerances and standards are assessed, then the design intent
+                  is carried into models and drawings that a workshop can work
+                  to without guessing.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>2D drawing and drafting</li>
+                  <li>Conceptual design and 3D modelling</li>
+                  <li>Manufacturing drawings</li>
+                  <li>3D animation</li>
+                  <li>FEA design analysis</li>
+                  <li>Jig and fixture design</li>
+                </ul>
+
+                <p class="subhead">Software capabilities</p>
+                <ul class="chip-list">
+                  <li class="chip">
+                    <i class="icon" data-lucide="box" aria-hidden="true"></i>
+                    AutoCAD
+                  </li>
+                  <li class="chip">
+                    <i class="icon" data-lucide="box" aria-hidden="true"></i>
+                    Autodesk Inventor
+                  </li>
+                  <li class="chip">
+                    <i class="icon" data-lucide="box" aria-hidden="true"></i>
+                    Siemens NX
+                  </li>
+                  <li class="chip">
+                    <i class="icon" data-lucide="box" aria-hidden="true"></i>
+                    SolidWorks
+                  </li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="engineering-cad-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+
+                <div
+                  class="detail-panel"
+                  id="engineering-cad-panel"
+                  data-open="false"
+                >
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>Sketches, concepts or a written brief</li>
+                            <li>Existing drawings and revision history</li>
+                            <li>Samples or measured dimensions</li>
+                            <li>Applicable specifications and standards</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>General arrangement and detail drawings</li>
+                            <li>3D models and assemblies</li>
+                            <li>Bills of material</li>
+                            <li>Fabrication and manufacturing drawings</li>
+                            <li>Analysis summaries and animation files</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              Drawing standard, units and projection are
+                              confirmed before work starts
+                            </li>
+                            <li>Revision control is maintained throughout</li>
+                            <li>
+                              FEA scope, load cases and assumptions are agreed
+                              before analysis
+                            </li>
+                            <li>
+                              Software listed above describes available
+                              capability, not vendor certification
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Category B — Fabrication ===== -->
+        <article
+          class="service-block"
+          id="fabrication"
+          data-category="fabrication"
+          aria-labelledby="fabrication-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1100&q=80"
+                    alt="Fabricated pipework and pumps installed in a process plant"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                    Fabrication
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 02</p>
+                <h2 id="fabrication-title">Fabrication</h2>
+                <p class="lead">
+                  Fabricated assemblies, pipe spools, bends and structural
+                  components produced to drawing and specification.
+                </p>
+                <p>
+                  Fabrication work is routed to the capability that matches the
+                  material, size, welding requirement and inspection standard
+                  involved, with documentation collected as the work proceeds.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>Process equipment and fabricated assemblies</li>
+                  <li>Pipe spools and bends</li>
+                  <li>Structural and process equipment</li>
+                  <li>Fixtures and components</li>
+                  <li>
+                    Relevant non-destructive examination (NDE) scope, where
+                    applicable
+                  </li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="fabrication-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+
+                <div class="detail-panel" id="fabrication-panel" data-open="false">
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>Fabrication and spool drawings</li>
+                            <li>Material specification and grade</li>
+                            <li>Welding and joint requirements</li>
+                            <li>Inspection and test plan, where applicable</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>Fabricated assemblies and sub-assemblies</li>
+                            <li>Pipe spools and formed bends</li>
+                            <li>Structural members and fixtures</li>
+                            <li>Weld and material records</li>
+                            <li>NDE reports where NDE is in scope</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              NDE method and extent are confirmed per project,
+                              not assumed
+                            </li>
+                            <li>
+                              Material traceability is maintained where the
+                              specification requires it
+                            </li>
+                            <li>
+                              Welding procedures and qualification follow the
+                              applicable standard for the work
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Category C — Precision Manufacturing ===== -->
+        <article
+          class="service-block"
+          id="precision-manufacturing"
+          data-category="precision-manufacturing"
+          aria-labelledby="precision-manufacturing-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1100&q=80"
+                    alt="Precision cutting tools and drill bits laid out in a tool roll"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+                    Precision Manufacturing
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 03</p>
+                <h2 id="precision-manufacturing-title">
+                  Precision Manufacturing
+                </h2>
+                <p class="lead">
+                  Close-tolerance machining and cutting, from single components
+                  through to repeat batches.
+                </p>
+                <p>
+                  Tolerance, surface finish, material and quantity decide the
+                  route. Those are confirmed during technical review so the
+                  component is made on equipment genuinely suited to it.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>Precision CNC machining</li>
+                  <li>CNC milling and component processing</li>
+                  <li>Waterjet cutting</li>
+                  <li>Heavy-thickness cutting</li>
+                  <li>Specialist machining</li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="precision-manufacturing-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+
+                <div
+                  class="detail-panel"
+                  id="precision-manufacturing-panel"
+                  data-open="false"
+                >
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>Machining drawings or 3D models</li>
+                            <li>Tolerance and surface finish requirements</li>
+                            <li>Material grade and condition</li>
+                            <li>Quantity and delivery requirement</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>Machined components and assemblies</li>
+                            <li>Cut profiles, blanks and plate parts</li>
+                            <li>Dimensional inspection records</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              Achievable tolerance is confirmed before routing
+                              rather than promised in advance
+                            </li>
+                            <li>
+                              Waterjet cutting suits heat-sensitive materials as
+                              it introduces no heat-affected zone
+                            </li>
+                            <li>
+                              Heavy-thickness capability depends on the selected
+                              facility and is confirmed per enquiry
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Category D — Specialist Execution ===== -->
+        <article
+          class="service-block"
+          id="specialist-execution"
+          data-category="specialist-execution"
+          aria-labelledby="specialist-execution-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1100&q=80"
+                    alt="Welding sparks flying from a steel joint in a fabrication shop"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+                    Specialist Execution
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 04</p>
+                <h2 id="specialist-execution-title">Specialist Execution</h2>
+                <p class="lead">
+                  The processes that turn drawings and cut material into
+                  finished, installed work.
+                </p>
+                <p>
+                  Welding, forming, cutting, assembly and installation support
+                  carried out by suitably qualified personnel, with the method
+                  selected to suit the material, geometry and standard.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>Welding</li>
+                  <li>Assembly and installation</li>
+                  <li>Laser and plasma cutting</li>
+                  <li>Pipe cutting and preparation</li>
+                  <li>Induction and cold bends</li>
+                  <li>Project-specific installation support</li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="specialist-execution-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+
+                <div
+                  class="detail-panel"
+                  id="specialist-execution-panel"
+                  data-open="false"
+                >
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>Drawings, weld maps and joint details</li>
+                            <li>Applicable procedures and standards</li>
+                            <li>Site, access and interface information</li>
+                            <li>Programme and sequence requirements</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>Welded joints and completed assemblies</li>
+                            <li>Cut and prepared pipe ends</li>
+                            <li>Induction and cold formed bends</li>
+                            <li>Installation and fit-up support records</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              Welder qualification is matched to the applicable
+                              standard for the joint
+                            </li>
+                            <li>
+                              Bending method — induction or cold — is selected
+                              by radius, material and wall thickness
+                            </li>
+                            <li>
+                              Site activity is subject to access, permit and
+                              safety requirements at the location
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Category E — Manpower ===== -->
+        <article
+          class="service-block"
+          id="manpower"
+          data-category="manpower"
+          aria-labelledby="manpower-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=80"
+                    alt="Site team working together on steel reinforcement installation"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+                    Manpower
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 05</p>
+                <h2 id="manpower-title">Manpower</h2>
+                <p class="lead">
+                  Skilled personnel provided for defined project needs, matched
+                  to the trade and qualification the work actually requires.
+                </p>
+                <p>
+                  Where a project needs additional hands rather than a
+                  manufactured item, DICE coordinates trades and technical
+                  personnel for the required discipline, duration and location.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>Welders</li>
+                  <li>Fitters</li>
+                  <li>Designers</li>
+                  <li>NDE personnel</li>
+                  <li>Skilled trade workers</li>
+                  <li>Project-specific and overseas manpower support</li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="manpower-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                  <a class="link-arrow" href="manpower-international.html"
+                    >International support</a
+                  >
+                </div>
+
+                <div class="detail-panel" id="manpower-panel" data-open="false">
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>Trade or discipline required</li>
+                            <li>Number of personnel and duration</li>
+                            <li>Qualification and certification requirements</li>
+                            <li>Location and working arrangements</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>Personnel deployed to the agreed scope</li>
+                            <li>Qualification and documentation records</li>
+                            <li>Timesheet and progress reporting</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              Qualifications are verified against the stated
+                              requirement before deployment
+                            </li>
+                            <li>
+                              Availability is confirmed per enquiry rather than
+                              held as standing capacity
+                            </li>
+                            <li>
+                              Overseas support is subject to the applicable
+                              travel and documentation requirements
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Category F — Technical Support ===== -->
+        <article
+          class="service-block"
+          id="technical-support"
+          data-category="technical-support"
+          aria-labelledby="technical-support-title"
+        >
+          <div class="container">
+            <div class="split">
+              <div class="split__media">
+                <div class="service-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1100&q=80"
+                    alt="Technician working on electronic control hardware with a hand tool"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="service-block__tag">
+                    <i class="icon" data-lucide="cpu" aria-hidden="true"></i>
+                    Technical Support
+                  </span>
+                </div>
+              </div>
+
+              <div class="split__content">
+                <p class="service-block__num">Category 06</p>
+                <h2 id="technical-support-title">Technical Support</h2>
+                <p class="lead">
+                  Systems and services that sit alongside mechanical scope and
+                  keep a facility running.
+                </p>
+                <p>
+                  Coordinated with the rest of the project rather than treated
+                  as a separate contract, so interfaces with structures,
+                  services and site activity are handled together.
+                </p>
+
+                <p class="subhead">Capabilities</p>
+                <ul class="capability-list">
+                  <li>IT hardware and software support</li>
+                  <li>ELV and security systems</li>
+                  <li>Fire-system support</li>
+                  <li>Instrumentation and control</li>
+                  <li>Controlled and temperature-managed environments</li>
+                </ul>
+
+                <div class="cluster mt-6">
+                  <button
+                    class="btn btn--outline detail-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="technical-support-panel"
+                    data-detail-toggle
+                  >
+                    <span data-detail-label>View Details</span>
+                    <i
+                      class="icon detail-toggle__chevron"
+                      data-lucide="chevron-down"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <a class="btn btn--primary" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+
+                <div
+                  class="detail-panel"
+                  id="technical-support-panel"
+                  data-open="false"
+                >
+                  <div class="detail-panel__inner">
+                    <div class="detail-panel__card">
+                      <div class="detail-grid">
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="clipboard-list"
+                              aria-hidden="true"
+                            ></i>
+                            Typical inputs
+                          </h4>
+                          <ul>
+                            <li>System scope, layouts and drawings</li>
+                            <li>Site conditions and existing infrastructure</li>
+                            <li>Applicable standards and approvals</li>
+                            <li>Interfaces with other disciplines</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="package-check"
+                              aria-hidden="true"
+                            ></i>
+                            Typical outputs
+                          </h4>
+                          <ul>
+                            <li>Installed or supported systems</li>
+                            <li>Configuration and as-built records</li>
+                            <li>Functional test records</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4>
+                            <i
+                              class="icon"
+                              data-lucide="info"
+                              aria-hidden="true"
+                            ></i>
+                            Good to know
+                          </h4>
+                          <ul>
+                            <li>
+                              Scope boundaries with other trades are agreed up
+                              front
+                            </li>
+                            <li>
+                              Controlled-environment work depends on the
+                              specific conditions to be maintained
+                            </li>
+                            <li>
+                              Fire and security scope follows the approvals
+                              applicable at the location
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Shown by js/services.js if a filter matches nothing -->
+        <div class="container">
+          <p data-catalogue-empty hidden>
+            No categories match that filter. Choose
+            <strong>All Capabilities</strong> to see the full catalogue.
+          </p>
+        </div>
+      </div>
+
+      <!-- ================= Coordination note ================= -->
+      <section class="section section--grey" aria-labelledby="coord-note-title">
+        <div class="container">
+          <div class="split">
+            <div class="split__content">
+              <p class="eyebrow">How capability is selected</p>
+              <h2 id="coord-note-title">
+                The category is the starting point, not the answer
+              </h2>
+              <p>
+                Listing six categories keeps the catalogue readable, but real
+                requirements usually cross them. A single enquiry might need
+                drafting, plate profiling, machining, welding and two trades on
+                site. That is normal, and it is the reason DICE reviews the
+                requirement before proposing a route.
+              </p>
+              <p>
+                Capability is coordinated through DICE and selected specialist
+                partners according to project requirements, scope, availability
+                and agreed arrangements.
+              </p>
+              <div class="cluster mt-5">
+                <a class="btn btn--navy" href="how-it-works.html"
+                  >See the five-step process</a
+                >
+                <a class="link-arrow" href="partner-network.html"
+                  >About the partner network</a
+                >
+              </div>
+            </div>
+            <div class="split__media">
+              <div class="note">
+                <i class="icon" data-lucide="info" aria-hidden="true"></i>
+                <p>
+                  Capability statements on this page describe what can be
+                  coordinated through DICE and its partner network. They are not
+                  claims of facility ownership, certification or guaranteed
+                  availability. Photography is illustrative of capability types
+                  only and is not presented as verified completed DICE projects.
+                </p>
+              </div>
+              <div class="stack mt-5">
+                <div class="stat">
+                  <span class="stat__label">Not sure which category fits?</span>
+                  <span class="stat__value">
+                    <a href="request-quote.html">Describe the requirement instead</a>
+                  </span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Prefer to talk it through?</span>
+                  <span class="stat__value">
+                    <a href="tel:+917203050180">+91-7203050180</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Send Us a Detailed Requirement</h2>
+            <p>
+              Drawings, specifications, quantities and timeline — the more scope
+              you share, the more useful the technical review and the proposed
+              route will be.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Submit Your Requirement
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="contact.html"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+            </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/services.js" defer></script>
+  </body>
+</html>

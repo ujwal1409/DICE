@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo Admin | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="Local demonstration dashboard for reviewing prototype RFQ enquiries stored in this browser. No backend, no database and no authentication."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Demonstration banner ================= -->
+      <div class="admin-banner">
+        <div class="container admin-banner__inner" style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3) var(--sp-5)">
+          <span class="admin-banner__tag">
+            <i class="icon" data-lucide="alert-triangle" aria-hidden="true"></i>
+            DEMONSTRATION ADMIN &mdash; Browser-local data only.
+          </span>
+          <p>
+            No server, no database, no authentication. Records below exist only
+            in this browser.
+          </p>
+        </div>
+      </div>
+
+      <!-- ================= Page header ================= -->
+      <section class="section section--tight" aria-labelledby="page-title">
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb" style="color: var(--c-ink-faint)">
+              <li><a href="index.html" style="color: var(--c-ink-muted)">Home</a></li>
+              <li><span aria-current="page" style="color: var(--c-turquoise-600)">Demo Admin</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Prototype tooling</p>
+          <h1 id="page-title">Demonstration enquiry dashboard</h1>
+          <p class="lead">
+            Reviews the demonstration RFQ submissions saved by this prototype in
+            your own browser. Nothing here was received by DICE.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= No-authentication warning ================= -->
+      <section class="section section--tight" aria-label="Security notice">
+        <div class="container">
+          <div class="limits">
+            <div class="limits__head">
+              <i class="icon" data-lucide="shield-off" aria-hidden="true"></i>
+              <h2>This page has no authentication</h2>
+            </div>
+            <p>
+              This is a local demonstration interface, not a real secure
+              administrative system. Please read this before using it for
+              anything.
+            </p>
+            <ul>
+              <li>
+                <strong>There is no login and no access control.</strong> There
+                is deliberately no sign-in screen, because a prototype with no
+                server cannot actually protect anything &mdash; a fake login
+                would imply security that does not exist.
+              </li>
+              <li>
+                <strong>It must not be used for real customer data.</strong>
+                Anything stored here sits unencrypted in this browser's local
+                storage and is readable by anyone with access to this device
+                or its developer tools.
+              </li>
+              <li>
+                <strong>These are not real customer submissions.</strong> Every
+                record was created by whoever filled in the RFQ form in this
+                browser. None of them reached DICE, and none represents a
+                genuine enquiry.
+              </li>
+              <li>
+                <strong>No documents were ever uploaded.</strong> Only filenames
+                and byte sizes were recorded. File contents were never read,
+                transmitted or stored.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Dashboard ================= -->
+      <section class="section section--tight" id="dashboard" aria-labelledby="dash-title" data-admin>
+        <div class="container">
+          <h2 class="visually-hidden" id="dash-title">Enquiry dashboard</h2>
+
+          <!-- KPI cards -->
+          <div class="grid grid--4" role="group" aria-label="Summary counts">
+            <div class="kpi">
+              <span class="kpi__label">
+                <i class="icon" data-lucide="inbox" aria-hidden="true"></i>
+                Total demo enquiries
+              </span>
+              <span class="kpi__value" data-kpi-total>0</span>
+              <span class="kpi__note">Saved in this browser</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi__label">
+                <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+                Engineering &amp; CAD
+              </span>
+              <span class="kpi__value" data-kpi-cad>0</span>
+              <span class="kpi__note">Design and documentation</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi__label">
+                <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                Fabrication
+              </span>
+              <span class="kpi__value" data-kpi-fab>0</span>
+              <span class="kpi__note">Assemblies and spools</span>
+            </div>
+            <div class="kpi kpi--orange">
+              <span class="kpi__label">
+                <i class="icon" data-lucide="layers" aria-hidden="true"></i>
+                Other categories
+              </span>
+              <span class="kpi__value" data-kpi-other>0</span>
+              <span class="kpi__note">Machining, execution, manpower, support</span>
+            </div>
+          </div>
+
+          <!-- Toolbar -->
+          <div class="toolbar mt-6">
+            <div class="field">
+              <label for="admin-search">Search</label>
+              <input
+                type="search"
+                id="admin-search"
+                data-admin-search
+                placeholder="Reference, customer, company or project title"
+              />
+              <p class="field__hint">Matches reference, customer, company and project title.</p>
+            </div>
+
+            <div class="field">
+              <label for="admin-category">Service category</label>
+              <select id="admin-category" data-admin-category>
+                <option value="all">All categories</option>
+                <option value="engineering-cad">Engineering &amp; CAD</option>
+                <option value="fabrication">Fabrication</option>
+                <option value="precision-manufacturing">Precision Manufacturing</option>
+                <option value="specialist-execution">Specialist Execution</option>
+                <option value="manpower">Manpower</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="admin-sort">Sort by submission date</label>
+              <select id="admin-sort" data-admin-sort>
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+              </select>
+            </div>
+
+            <div class="toolbar__actions">
+              <button class="btn btn--outline" type="button" data-admin-refresh>
+                <i class="icon" data-lucide="refresh-cw" aria-hidden="true"></i>
+                Refresh
+              </button>
+              <button class="btn btn--navy" type="button" data-admin-clear>
+                <i class="icon" data-lucide="trash-2" aria-hidden="true"></i>
+                Clear Demo Data
+              </button>
+            </div>
+          </div>
+
+          <p
+            class="form-status form-status--ok is-visible mt-4"
+            data-admin-status
+            role="status"
+            hidden
+          ></p>
+
+          <p class="catalogue-bar__meta mt-5">
+            Showing <span class="catalogue-bar__count" data-admin-count>0</span>
+            record(s)
+          </p>
+
+          <!-- Table -->
+          <div class="table-wrap mt-4" data-admin-table-wrap hidden>
+            <table class="data-table" data-admin-table>
+              <caption class="visually-hidden">
+                Demonstration enquiries saved in this browser
+              </caption>
+            </table>
+          </div>
+
+          <!-- No search results (data exists, filter matches nothing) -->
+          <p data-admin-noresults hidden class="filelist__empty">
+            <strong>No records match the current search or filter</strong>
+            Clear the search box or choose All categories to see everything
+            saved in this browser.
+          </p>
+
+          <!-- Empty state (no data at all) -->
+          <div class="empty-state" data-admin-empty hidden>
+            <span class="empty-state__icon" aria-hidden="true">
+              <i class="icon" data-lucide="inbox"></i>
+            </span>
+            <h3>No demonstration enquiries yet</h3>
+            <p>
+              Nothing has been saved in this browser. Submit the demonstration
+              RFQ form and the record will appear here, complete with its
+              generated reference number.
+            </p>
+            <div class="cluster cluster--center">
+              <a class="btn btn--primary" href="request-quote.html">
+                <i class="icon" data-lucide="send" aria-hidden="true"></i>
+                Open the RFQ form
+              </a>
+              <a class="btn btn--outline" href="contact.html">Contact form</a>
+            </div>
+          </div>
+
+          <!-- Detail view -->
+          <div
+            class="detail-view mt-6"
+            data-admin-detail
+            role="region"
+            aria-label="Enquiry detail"
+            hidden
+          >
+            <div class="detail-view__head">
+              <div>
+                <h3>Enquiry detail</h3>
+                <p class="mb-0 text-muted">
+                  Reference
+                  <strong data-admin-detail-ref class="data-table__ref"></strong>
+                  &mdash; demonstration record, not a real enquiry.
+                </p>
+              </div>
+              <button
+                class="btn btn--outline btn--sm detail-view__close"
+                type="button"
+                data-admin-detail-close
+              >
+                <i class="icon" data-lucide="x" aria-hidden="true"></i>
+                Close detail
+              </button>
+            </div>
+            <div class="review" data-admin-detail-body></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= How the data works ================= -->
+      <section class="section section--grey" aria-labelledby="storage-title">
+        <div class="container container--narrow">
+          <div class="section-head">
+            <p class="eyebrow">Where this data lives</p>
+            <h2 id="storage-title">Browser-local storage, nothing else</h2>
+          </div>
+
+          <ul class="checklist">
+            <li>
+              <i class="icon" data-lucide="hard-drive" aria-hidden="true"></i>
+              <span>
+                <strong>Storage key</strong>
+                <span>
+                  Records are held under <code>dice.prototype.enquiries</code>
+                  in this browser's localStorage, with the reference counter in
+                  <code>dice.prototype.refseq</code>.
+                </span>
+              </span>
+            </li>
+            <li>
+              <i class="icon" data-lucide="monitor" aria-hidden="true"></i>
+              <span>
+                <strong>This device only</strong>
+                <span>
+                  Data is not synchronised, backed up or shared. Open the site
+                  in a different browser or on another device and the dashboard
+                  will be empty.
+                </span>
+              </span>
+            </li>
+            <li>
+              <i class="icon" data-lucide="trash-2" aria-hidden="true"></i>
+              <span>
+                <strong>Easy to remove</strong>
+                <span>
+                  Clear Demo Data deletes everything after a confirmation
+                  prompt. Clearing your browser's site data removes it too.
+                </span>
+              </span>
+            </li>
+            <li>
+              <i class="icon" data-lucide="file-x" aria-hidden="true"></i>
+              <span>
+                <strong>No document contents</strong>
+                <span>
+                  Files selected in the RFQ form were never uploaded. Only
+                  filenames and sizes appear in a record.
+                </span>
+              </span>
+            </li>
+          </ul>
+
+          <div class="cta-strip mt-7">
+            <div>
+              <h3>Need a record to look at?</h3>
+              <p>Submit the demonstration RFQ form and refresh this page.</p>
+            </div>
+            <a class="btn btn--primary" href="request-quote.html"
+              >Open the RFQ form</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                      </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/enquiry.js" defer></script>
+    <script src="js/admin.js" defer></script>
+  </body>
+</html>

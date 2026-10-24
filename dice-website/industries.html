@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Industries &amp; Applications | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="Six illustrative application areas where the listed DICE capabilities may support a project requirement, from process equipment and piping through to engineering documentation."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Industries &amp; Applications</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Application areas</p>
+          <h1 id="page-title">Industries &amp; Applications</h1>
+          <p>
+            Six application areas where DICE&rsquo;s listed capabilities may
+            support a project requirement &mdash; and the capability mix each
+            one typically draws on.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Discuss Your Requirement</a
+            >
+            <a class="btn btn--ghost-light" href="services.html"
+              >Capability categories</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Intro ================= -->
+      <section class="section" aria-labelledby="intro-title">
+        <div class="container container--narrow">
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--center">How to read this page</p>
+            <h2 id="intro-title">
+              Application areas, not a client list
+            </h2>
+            <p class="lead">
+              The sections below describe the kinds of work the listed DICE
+              capabilities can support. They are illustrative application
+              areas, not verified customer projects, and the list is not
+              exhaustive.
+            </p>
+          </div>
+
+          <div class="note mt-6">
+            <i class="icon" data-lucide="info" aria-hidden="true"></i>
+            <p>
+              No customer names, project histories, sector accreditations or
+              industry endorsements are stated anywhere on this page. If your
+              requirement does not obviously match a section below, it is still
+              worth describing &mdash; the technical review comes before any
+              routing decision.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ===== 01 Process equipment and industrial assemblies ===== -->
+      <article
+        class="service-block"
+        id="process-equipment"
+        aria-labelledby="process-equipment-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1100&q=80"
+                  alt="Industrial process plant with pipework and structural steelwork"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                  Application area 01
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 01</p>
+              <h2 id="process-equipment-title">Process equipment and industrial assemblies</h2>
+              <p class="lead">Equipment and assemblies that sit inside a process line, where the item has to suit the duty, the medium and the standard it is built to.</p>
+              <p>Work of this kind usually crosses several capabilities: drawings have to be developed or interpreted, plate and sections have to be cut and formed, joints have to be welded by qualified personnel, and inspection records have to follow the item through to handover.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Fabrication</li>
+              <li class="tag">Engineering &amp; CAD</li>
+              <li class="tag">Specialist Execution</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="services.html#fabrication">Fabrication capability</a>
+                <a class="link-arrow" href="services.html#engineering-cad">Engineering &amp; CAD capability</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ===== 02 Pipe spools, bends and piping-related components ===== -->
+      <article
+        class="service-block"
+        id="piping"
+        aria-labelledby="piping-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1100&q=80"
+                  alt="Fabricated pipework and pumps installed in a process plant"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="git-merge" aria-hidden="true"></i>
+                  Application area 02
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 02</p>
+              <h2 id="piping-title">Pipe spools, bends and piping-related components</h2>
+              <p class="lead">Spools, bends and the fittings around them, where fit-up at site depends entirely on dimensional control in the shop.</p>
+              <p>Bend method matters here. Induction and cold forming suit different combinations of radius, material and wall thickness, and the choice is made during technical review rather than assumed. End preparation, marking and spool identification are what make site assembly straightforward.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Fabrication</li>
+              <li class="tag">Specialist Execution</li>
+              <li class="tag">Precision Manufacturing</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="services.html#specialist-execution">Specialist Execution capability</a>
+                <a class="link-arrow" href="services.html#fabrication">Fabrication capability</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ===== 03 Structural steel and fabricated components ===== -->
+      <article
+        class="service-block"
+        id="structural-steel"
+        aria-labelledby="structural-steel-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1100&q=80"
+                  alt="Interior of an industrial hall with exposed structural steel columns"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="frame" aria-hidden="true"></i>
+                  Application area 03
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 03</p>
+              <h2 id="structural-steel-title">Structural steel and fabricated components</h2>
+              <p class="lead">Frames, supports, platforms and the brackets and fixtures that hold everything else in place.</p>
+              <p>Structural work is unforgiving about cumulative error, so connection detailing and hole position tend to decide whether erection goes smoothly. Engineering review before fabrication is usually the cheapest part of the whole scope.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Engineering &amp; CAD</li>
+              <li class="tag">Fabrication</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="services.html#fabrication">Fabrication capability</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ===== 04 Precision-machined components ===== -->
+      <article
+        class="service-block"
+        id="machined-components"
+        aria-labelledby="machined-components-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1100&q=80"
+                  alt="Precision cutting tools and drill bits laid out in a tool roll"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+                  Application area 04
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 04</p>
+              <h2 id="machined-components-title">Precision-machined components</h2>
+              <p class="lead">Close-tolerance parts, single pieces or repeat batches, where tolerance and finish drive the manufacturing route.</p>
+              <p>Material, tolerance, surface finish and quantity together decide which equipment genuinely suits a part. Confirming those four things properly at enquiry stage is what prevents a component being made on the wrong machine.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Precision Manufacturing</li>
+              <li class="tag">Engineering &amp; CAD</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="services.html#precision-manufacturing">Precision Manufacturing capability</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ===== 05 Industrial installation and specialist execution ===== -->
+      <article
+        class="service-block"
+        id="installation"
+        aria-labelledby="installation-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=80"
+                  alt="Site team working together on steel reinforcement installation"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+                  Application area 05
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 05</p>
+              <h2 id="installation-title">Industrial installation and specialist execution</h2>
+              <p class="lead">Work where the activity happens on site rather than in a shop, and where access and sequence shape what is possible.</p>
+              <p>Site scope brings constraints that have nothing to do with the drawing: permits, access windows, working at height, and other trades in the same space. Those are raised at review stage, because they often change the method entirely.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Specialist Execution</li>
+              <li class="tag">Manpower</li>
+              <li class="tag">Technical Support</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="manpower-international.html">Manpower &amp; international support</a>
+                <a class="link-arrow" href="services.html#specialist-execution">Specialist Execution capability</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ===== 06 Engineering design and manufacturing documentation ===== -->
+      <article
+        class="service-block"
+        id="engineering-documentation"
+        aria-labelledby="engineering-documentation-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__media">
+              <div class="service-block__media">
+                <img
+                  src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1100&q=80"
+                  alt="Engineers working up a design concept on a technical drawing"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-block__tag">
+                  <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+                  Application area 06
+                </span>
+              </div>
+            </div>
+
+            <div class="split__content">
+              <p class="service-block__num">Application area 06</p>
+              <h2 id="engineering-documentation-title">Engineering design and manufacturing documentation</h2>
+              <p class="lead">The design and documentation layer that every other application area depends on.</p>
+              <p>Concept development, 3D modelling, manufacturing drawings, jig and fixture design and analysis where it is in scope. Revision control and a clear issue status matter as much as the geometry, because everyone downstream works from whatever was released.</p>
+
+              <p class="subhead">Capabilities typically involved</p>
+              <ul class="scenario__mix">
+              <li class="tag">Engineering &amp; CAD</li>
+              </ul>
+
+              <div class="cluster mt-6">
+                <a class="btn btn--primary" href="request-quote.html"
+                  >Discuss Your Requirement</a
+                >
+              </div>
+              <div class="cluster mt-4">
+                <a class="link-arrow" href="services.html#engineering-cad">Engineering &amp; CAD capability</a>
+                <a class="link-arrow" href="how-it-works.html#engineering-workflow">The engineering workflow</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ================= Closing note ================= -->
+      <section class="section section--grey" aria-labelledby="scope-note-title">
+        <div class="container container--narrow">
+          <div class="limits">
+            <div class="limits__head">
+              <i class="icon" data-lucide="alert-triangle" aria-hidden="true"></i>
+              <h2 id="scope-note-title">What this page does not claim</h2>
+            </div>
+            <p>
+              These are illustrative application areas showing how the listed
+              capabilities may support different project requirements.
+            </p>
+            <ul>
+              <li>
+                They are not verified customer projects or completed works.
+              </li>
+              <li>
+                They are not an exhaustive list of industries served.
+              </li>
+              <li>
+                No sector experience, approval, accreditation or endorsement is
+                claimed.
+              </li>
+              <li>
+                Photography is illustrative of capability types only.
+              </li>
+            </ul>
+          </div>
+
+          <div class="cta-strip mt-7">
+            <div>
+              <h3>Requirement outside these areas?</h3>
+              <p>Describe it anyway &mdash; review comes before routing.</p>
+            </div>
+            <a class="btn btn--primary" href="request-quote.html"
+              >Discuss Your Requirement</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Tell us about your application</h2>
+            <p>
+              Share your project scope and let DICE coordinate an appropriate
+              technical and execution route.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Discuss Your Requirement
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="projects.html"
+              >See illustrative examples</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                     </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

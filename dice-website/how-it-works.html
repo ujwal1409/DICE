@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How It Works | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="The DICE coordination process: requirement, technical review, partner match, execution and delivery — plus the engineering workflow from input through to release."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">How It Works</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">The coordination process</p>
+          <h1 id="page-title">From requirement to delivery</h1>
+          <p>
+            Requirement, technical review, partner match, execution and
+            delivery — one consistent route for every enquiry, whatever the
+            capability mix turns out to be.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Start Your Project</a
+            >
+            <a class="btn btn--ghost-light" href="#process">See the five steps</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Interactive five-step process ================= -->
+      <section
+        class="section section--dark"
+        id="process"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="eyebrow eyebrow--center">The five steps</p>
+            <h2 id="process-title">Select a step to see what happens</h2>
+            <p class="lead">
+              The same route runs from first contact to handover. Choose any
+              step below to read what goes in, what comes out, and who is
+              responsible for it.
+            </p>
+          </div>
+
+          <div class="stepper">
+            <div
+              class="stepper__track"
+              role="tablist"
+              aria-label="The five step DICE process"
+              aria-orientation="horizontal"
+              data-tablist
+            >
+              <button
+                class="stepper__step"
+                role="tab"
+                type="button"
+                id="step-1-tab"
+                aria-controls="step-1-panel"
+                aria-selected="true"
+              >
+                <span class="stepper__marker">
+                  <i
+                    class="icon"
+                    data-lucide="clipboard-list"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="stepper__num" aria-hidden="true">1</span>
+                </span>
+                <span class="stepper__label">Requirement</span>
+                <span class="stepper__hint">What you need, in your words</span>
+              </button>
+
+              <button
+                class="stepper__step"
+                role="tab"
+                type="button"
+                id="step-2-tab"
+                aria-controls="step-2-panel"
+                aria-selected="false"
+              >
+                <span class="stepper__marker">
+                  <i class="icon" data-lucide="search" aria-hidden="true"></i>
+                  <span class="stepper__num" aria-hidden="true">2</span>
+                </span>
+                <span class="stepper__label">Technical Review</span>
+                <span class="stepper__hint">Scope made unambiguous</span>
+              </button>
+
+              <button
+                class="stepper__step"
+                role="tab"
+                type="button"
+                id="step-3-tab"
+                aria-controls="step-3-panel"
+                aria-selected="false"
+              >
+                <span class="stepper__marker">
+                  <i
+                    class="icon"
+                    data-lucide="git-merge"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="stepper__num" aria-hidden="true">3</span>
+                </span>
+                <span class="stepper__label">Partner Match</span>
+                <span class="stepper__hint">Capability chosen to fit</span>
+              </button>
+
+              <button
+                class="stepper__step"
+                role="tab"
+                type="button"
+                id="step-4-tab"
+                aria-controls="step-4-panel"
+                aria-selected="false"
+              >
+                <span class="stepper__marker">
+                  <i class="icon" data-lucide="wrench" aria-hidden="true"></i>
+                  <span class="stepper__num" aria-hidden="true">4</span>
+                </span>
+                <span class="stepper__label">Execution</span>
+                <span class="stepper__hint">Work coordinated and tracked</span>
+              </button>
+
+              <button
+                class="stepper__step"
+                role="tab"
+                type="button"
+                id="step-5-tab"
+                aria-controls="step-5-panel"
+                aria-selected="false"
+              >
+                <span class="stepper__marker">
+                  <i class="icon" data-lucide="truck" aria-hidden="true"></i>
+                  <span class="stepper__num" aria-hidden="true">5</span>
+                </span>
+                <span class="stepper__label">Delivery</span>
+                <span class="stepper__hint">Closed out against scope</span>
+              </button>
+            </div>
+
+            <div class="step-panels">
+              <!-- Step 1 -->
+              <div
+                class="step-panel"
+                role="tabpanel"
+                id="step-1-panel"
+                aria-labelledby="step-1-tab"
+                tabindex="0"
+              >
+                <div class="step-panel__head">
+                  <span class="step-panel__eyebrow">Step 1</span>
+                  <h3>Requirement</h3>
+                </div>
+                <div class="step-panel__body">
+                  <p>
+                    The customer submits a drawing, scope, sketch, or problem
+                    statement. There is no need to arrive with a finished
+                    specification — a description of the problem is a valid
+                    starting point, and often the more useful one.
+                  </p>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="clipboard-list"
+                        aria-hidden="true"
+                      ></i>
+                      What helps most
+                    </h4>
+                    <ul>
+                      <li>Drawings, sketches or photographs</li>
+                      <li>Scope or problem statement</li>
+                      <li>Quantities and target timeline</li>
+                      <li>Applicable standards, if known</li>
+                    </ul>
+                  </div>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="package-check"
+                        aria-hidden="true"
+                      ></i>
+                      What comes back
+                    </h4>
+                    <ul>
+                      <li>Acknowledgement of the enquiry</li>
+                      <li>A single named point of contact</li>
+                      <li>Any immediate clarifying questions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div
+                class="step-panel"
+                role="tabpanel"
+                id="step-2-panel"
+                aria-labelledby="step-2-tab"
+                tabindex="0"
+              >
+                <div class="step-panel__head">
+                  <span class="step-panel__eyebrow">Step 2</span>
+                  <h3>Technical Review</h3>
+                </div>
+                <div class="step-panel__body">
+                  <p>
+                    Clarify specifications, constraints, materials, quantities,
+                    and execution requirements. This is where ambiguity gets
+                    removed before it becomes an expensive problem downstream,
+                    and where the realistic process route starts to emerge.
+                  </p>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="clipboard-list"
+                        aria-hidden="true"
+                      ></i>
+                      What gets examined
+                    </h4>
+                    <ul>
+                      <li>Materials, grades and condition</li>
+                      <li>Tolerances and surface finish</li>
+                      <li>Applicable codes and standards</li>
+                      <li>Access, handling and site constraints</li>
+                    </ul>
+                  </div>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="package-check"
+                        aria-hidden="true"
+                      ></i>
+                      What comes back
+                    </h4>
+                    <ul>
+                      <li>A clarified, written scope</li>
+                      <li>Risks and open questions flagged</li>
+                      <li>A proposed process route</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div
+                class="step-panel"
+                role="tabpanel"
+                id="step-3-panel"
+                aria-labelledby="step-3-tab"
+                tabindex="0"
+              >
+                <div class="step-panel__head">
+                  <span class="step-panel__eyebrow">Step 3</span>
+                  <h3>Partner Match</h3>
+                </div>
+                <div class="step-panel__body">
+                  <p>
+                    Identify suitable specialist capabilities for the
+                    requirement. Selection follows the clarified scope rather
+                    than a fixed supplier list, and the arrangement is
+                    confirmed for the specific project before anything starts.
+                  </p>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="clipboard-list"
+                        aria-hidden="true"
+                      ></i>
+                      What drives selection
+                    </h4>
+                    <ul>
+                      <li>Process and equipment required</li>
+                      <li>Material and size envelope</li>
+                      <li>Inspection and qualification needs</li>
+                      <li>Availability against the programme</li>
+                    </ul>
+                  </div>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="package-check"
+                        aria-hidden="true"
+                      ></i>
+                      What comes back
+                    </h4>
+                    <ul>
+                      <li>The capability route for the work</li>
+                      <li>Interfaces and responsibilities defined</li>
+                      <li>Indicative commercial basis</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div
+                class="step-panel"
+                role="tabpanel"
+                id="step-4-panel"
+                aria-labelledby="step-4-tab"
+                tabindex="0"
+              >
+                <div class="step-panel__head">
+                  <span class="step-panel__eyebrow">Step 4</span>
+                  <h3>Execution</h3>
+                </div>
+                <div class="step-panel__body">
+                  <p>
+                    Coordinate engineering, manufacturing, fabrication, or other
+                    agreed activities. DICE keeps hold of the customer
+                    conversation while the work runs, so progress, changes and
+                    problems surface through one channel.
+                  </p>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="clipboard-list"
+                        aria-hidden="true"
+                      ></i>
+                      What is in place first
+                    </h4>
+                    <ul>
+                      <li>Approved scope and released drawings</li>
+                      <li>Agreed inspection and test points</li>
+                      <li>Programme and sequence</li>
+                    </ul>
+                  </div>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="package-check"
+                        aria-hidden="true"
+                      ></i>
+                      What comes back
+                    </h4>
+                    <ul>
+                      <li>Progress updates against the programme</li>
+                      <li>Inspection records as work proceeds</li>
+                      <li>Early notice of any change or delay</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div
+                class="step-panel"
+                role="tabpanel"
+                id="step-5-panel"
+                aria-labelledby="step-5-tab"
+                tabindex="0"
+              >
+                <div class="step-panel__head">
+                  <span class="step-panel__eyebrow">Step 5</span>
+                  <h3>Delivery</h3>
+                </div>
+                <div class="step-panel__body">
+                  <p>
+                    Close out the work against the agreed requirement. Delivery
+                    is not just dispatch — it is the point where what was built
+                    is checked back against what was asked for, with the
+                    documentation to show it.
+                  </p>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="clipboard-list"
+                        aria-hidden="true"
+                      ></i>
+                      What is checked
+                    </h4>
+                    <ul>
+                      <li>Completed work against the agreed scope</li>
+                      <li>Outstanding items and concessions</li>
+                      <li>Documentation completeness</li>
+                    </ul>
+                  </div>
+                  <div class="step-panel__col">
+                    <h4>
+                      <i
+                        class="icon"
+                        data-lucide="package-check"
+                        aria-hidden="true"
+                      ></i>
+                      What comes back
+                    </h4>
+                    <ul>
+                      <li>Dispatch or site handover</li>
+                      <li>Documentation pack for the scope</li>
+                      <li>Formal close-out against the requirement</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="note note--dark mt-7">
+            <i class="icon" data-lucide="info" aria-hidden="true"></i>
+            <p>
+              This describes the coordination process DICE follows. It is not a
+              contractual commitment, and the documentation, inspection and
+              commercial arrangements for any particular scope are confirmed
+              per project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Engineering workflow ================= -->
+      <section
+        class="section"
+        id="engineering-workflow"
+        aria-labelledby="workflow-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Engineering workflow</p>
+            <h2 id="workflow-title">Input → Interpret → Model → Validate → Release</h2>
+            <p class="lead">
+              Inside step two and step four, engineering work follows its own
+              sequence. Each stage has a defined purpose, and nothing is
+              released until it has been checked.
+            </p>
+          </div>
+
+          <div class="flow" data-reveal-group>
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 01</span>
+              <h3>Input</h3>
+              <p>
+                Receive and log everything the customer provides — drawings,
+                sketches, samples, specifications and revision history — so
+                there is one agreed starting point.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 02</span>
+              <h3>Interpret</h3>
+              <p>
+                Establish the actual design intent, identify constraints, and
+                list what is missing. Assumptions are written down rather than
+                left implicit.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 03</span>
+              <h3>Model</h3>
+              <p>
+                Build the 2D or 3D representation and develop it into
+                manufacturing documentation that a workshop can work to without
+                interpretation.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 04</span>
+              <h3>Validate</h3>
+              <p>
+                Check the output against specification, applicable standards and
+                buildability. Where analysis is in scope, load cases and
+                assumptions are agreed first.
+              </p>
+            </article>
+
+            <article class="flow__item reveal">
+              <span class="flow__stage">Stage 05</span>
+              <h3>Release</h3>
+              <p>
+                Issue controlled drawings with clear revision status, so
+                everyone downstream is working from the same version of the
+                truth.
+              </p>
+            </article>
+          </div>
+
+          <div class="split mt-9">
+            <div class="split__content">
+              <p class="eyebrow">Why it is sequenced this way</p>
+              <h3>Interpretation before modelling, validation before release</h3>
+              <p>
+                Most rework in fabrication traces back to a drawing that was
+                modelled before the intent was properly understood, or released
+                before it was checked. Keeping interpretation and validation as
+                explicit stages — rather than things that happen informally —
+                is what makes the downstream route predictable.
+              </p>
+              <ul class="tick-list">
+                <li>Assumptions recorded, not carried in someone's head</li>
+                <li>Revision status visible on every issued document</li>
+                <li>
+                  Buildability considered while changes are still cheap
+                </li>
+              </ul>
+              <div class="cluster mt-6">
+                <a class="btn btn--outline" href="services.html#engineering-cad"
+                  >Engineering &amp; CAD capability</a
+                >
+              </div>
+            </div>
+            <div class="split__media">
+              <div class="media-frame">
+                <div class="media media--wide">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1100&q=80"
+                    alt="Engineers working up a design concept on a technical drawing"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Partner mix varies, process constant ========== -->
+      <section
+        class="section section--grey"
+        id="partner-mix"
+        aria-labelledby="mix-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Same process, different mix</p>
+            <h2 id="mix-title">
+              The capability mix changes. The coordination process does not.
+            </h2>
+            <p class="lead">
+              Three illustrative requirements, three different partner mixes —
+              and in every case the same five steps, the same single interface,
+              and the same technical review before anything is routed.
+            </p>
+          </div>
+
+          <div class="grid grid--3 grid--gap-lg" data-reveal-group>
+            <article class="scenario reveal">
+              <div class="scenario__head">
+                <span class="icon-badge icon-badge--sm">
+                  <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+                </span>
+                <h3>Drawing to fabricated assembly</h3>
+              </div>
+              <p class="text-muted mb-0">
+                A customer supplies a general arrangement and needs a welded
+                assembly delivered to specification with inspection records.
+              </p>
+              <div>
+                <p class="subhead mt-0">Capability mix</p>
+                <ul class="scenario__mix">
+                  <li class="tag">Engineering &amp; CAD</li>
+                  <li class="tag">Fabrication</li>
+                  <li class="tag">Welding</li>
+                  <li class="tag">NDE</li>
+                </ul>
+              </div>
+              <p class="scenario__constant">
+                <strong>Constant:</strong> requirement, technical review,
+                partner match, execution, delivery.
+              </p>
+            </article>
+
+            <article class="scenario reveal">
+              <div class="scenario__head">
+                <span class="icon-badge icon-badge--sm">
+                  <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+                </span>
+                <h3>Machined component batch</h3>
+              </div>
+              <p class="text-muted mb-0">
+                A repeat batch of close-tolerance components, where material and
+                finish decide which machining route is appropriate.
+              </p>
+              <div>
+                <p class="subhead mt-0">Capability mix</p>
+                <ul class="scenario__mix">
+                  <li class="tag">Engineering &amp; CAD</li>
+                  <li class="tag">CNC Machining</li>
+                  <li class="tag">Dimensional Inspection</li>
+                </ul>
+              </div>
+              <p class="scenario__constant">
+                <strong>Constant:</strong> requirement, technical review,
+                partner match, execution, delivery.
+              </p>
+            </article>
+
+            <article class="scenario reveal">
+              <div class="scenario__head">
+                <span class="icon-badge icon-badge--sm">
+                  <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+                </span>
+                <h3>Site installation with trades</h3>
+              </div>
+              <p class="text-muted mb-0">
+                Work that is mostly people rather than product — qualified
+                trades supporting installation and fit-up on a live site.
+              </p>
+              <div>
+                <p class="subhead mt-0">Capability mix</p>
+                <ul class="scenario__mix">
+                  <li class="tag">Specialist Execution</li>
+                  <li class="tag">Manpower</li>
+                  <li class="tag tag--orange">Site Coordination</li>
+                </ul>
+              </div>
+              <p class="scenario__constant">
+                <strong>Constant:</strong> requirement, technical review,
+                partner match, execution, delivery.
+              </p>
+            </article>
+          </div>
+
+          <div class="note mt-7">
+            <i class="icon" data-lucide="info" aria-hidden="true"></i>
+            <p>
+              These three scenarios are illustrative examples used to show how
+              the capability mix varies. They are not descriptions of completed
+              DICE projects, and the capability names refer to the categories
+              listed on the
+              <a href="services.html">services page</a>, not to named partners.
+            </p>
+          </div>
+
+          <div class="cta-strip mt-7">
+            <div>
+              <h3>Not sure which route your requirement needs?</h3>
+              <p>
+                That is what step two is for. Describe the problem and the
+                review comes before the routing.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="request-quote.html"
+              >Start Your Project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Start at step one</h2>
+            <p>
+              Share your project scope and let DICE coordinate an appropriate
+              technical and execution route.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Start Your Project
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="partner-network.html"
+              >See the partner network</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                      </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

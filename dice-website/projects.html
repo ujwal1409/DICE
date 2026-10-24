@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects &amp; Gallery | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="A filterable gallery of illustrative concept demonstrations covering CAD and 3D models, fabrication, pipe spools, CNC machining, cutting, welding and industrial installation."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Projects &amp; Gallery</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Concept demonstrations</p>
+          <h1 id="page-title">Projects &amp; Gallery</h1>
+          <p>
+            Illustrative concept demonstrations of the capability types
+            available through DICE and its partner network. Filter by category,
+            then open any card for the illustrative scope.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Submit Your Requirement</a
+            >
+            <a class="btn btn--ghost-light" href="services.html"
+              >Capability categories</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Concept notice ================= -->
+      <section class="section section--tight" aria-label="Gallery notice">
+        <div class="container">
+          <div class="limits">
+            <div class="limits__head">
+              <i class="icon" data-lucide="alert-triangle" aria-hidden="true"></i>
+              <h2>Every item here is a concept demonstration</h2>
+            </div>
+            <p>
+              This gallery exists to show what the listed capabilities look like
+              in practice. Nothing on this page is a completed DICE project.
+            </p>
+            <ul>
+              <li>
+                No actual project references, customer names or endorsements are
+                given.
+              </li>
+              <li>
+                No metrics, tonnages, delivery figures or achievements are
+                claimed.
+              </li>
+              <li>
+                The illustrative scope shown in each card describes how such
+                work would typically be approached, not work that was carried
+                out.
+              </li>
+              <li>
+                Photography is illustrative of capability types only.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Filters + gallery ================= -->
+      <section class="section section--tight" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <h2 class="visually-hidden" id="gallery-title">
+            Concept demonstration gallery
+          </h2>
+
+          <div
+            class="filters"
+            role="toolbar"
+            aria-label="Filter concept demonstrations by category"
+            aria-controls="gallery-grid"
+            data-filter-group
+          >
+            <button type="button" data-filter="all" aria-pressed="true">
+              <i class="icon" data-lucide="layers" aria-hidden="true"></i>
+              All
+            </button>
+            <button type="button" data-filter="cad" aria-pressed="false">
+              <i class="icon" data-lucide="pen-tool" aria-hidden="true"></i>
+              CAD &amp; 3D Models
+            </button>
+            <button type="button" data-filter="fabrication" aria-pressed="false">
+              <i class="icon" data-lucide="factory" aria-hidden="true"></i>
+              Fabrication
+            </button>
+            <button type="button" data-filter="spools" aria-pressed="false">
+              <i class="icon" data-lucide="git-merge" aria-hidden="true"></i>
+              Pipe Spools &amp; Bends
+            </button>
+            <button type="button" data-filter="cnc" aria-pressed="false">
+              <i class="icon" data-lucide="cog" aria-hidden="true"></i>
+              CNC Machining
+            </button>
+            <button type="button" data-filter="cutting" aria-pressed="false">
+              <i class="icon" data-lucide="scissors" aria-hidden="true"></i>
+              Cutting &amp; Forming
+            </button>
+            <button type="button" data-filter="welding" aria-pressed="false">
+              <i class="icon" data-lucide="flame" aria-hidden="true"></i>
+              Welding &amp; Assembly
+            </button>
+            <button type="button" data-filter="installation" aria-pressed="false">
+              <i class="icon" data-lucide="hard-hat" aria-hidden="true"></i>
+              Industrial Installations
+            </button>
+          </div>
+
+          <p class="catalogue-bar__meta mb-5">
+            Showing
+            <span class="catalogue-bar__count" data-gallery-count>20</span>
+            of 20 concept demonstrations
+          </p>
+
+          <div class="gallery" id="gallery-grid" data-gallery>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cad"
+            data-category-label="CAD &amp; 3D Models"
+            data-title="Concept design development"
+            data-description="Turning a sketch or a written brief into a workable design concept before any modelling starts."
+            data-scope="Review of the brief, constraints and available reference material|Outline concept options with assumptions recorded|Agreement on the direction before detailed modelling|Hand-off into 3D modelling and drawing production"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=900&q=80"
+                alt="Engineers working up a design concept on a technical drawing"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">CAD &amp; 3D Models</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Concept design development
+                </button>
+              </h3>
+              <p>Turning a sketch or a written brief into a workable design concept before any modelling starts.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cad"
+            data-category-label="CAD &amp; 3D Models"
+            data-title="Manufacturing drawing preparation"
+            data-description="Developing a model into drawings a workshop can build from without interpretation."
+            data-scope="General arrangement and detail drawings|Bills of material and part numbering|Weld detailing and joint callouts where applicable|Controlled issue with clear revision status"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80"
+                alt="Engineer drafting a design at a workstation with technical drawings and measuring tools"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">CAD &amp; 3D Models</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Manufacturing drawing preparation
+                </button>
+              </h3>
+              <p>Developing a model into drawings a workshop can build from without interpretation.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cad"
+            data-category-label="CAD &amp; 3D Models"
+            data-title="Design analysis and calculation"
+            data-description="Checking that an arrangement behaves as intended before it is committed to manufacture."
+            data-scope="Load cases and assumptions agreed before analysis begins|FEA where it is within the agreed scope|Results summarised against the acceptance basis|Design adjusted where the analysis indicates it"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?auto=format&fit=crop&w=900&q=80"
+                alt="Engineering calculations and equations written out on a chalkboard"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">CAD &amp; 3D Models</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Design analysis and calculation
+                </button>
+              </h3>
+              <p>Checking that an arrangement behaves as intended before it is committed to manufacture.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="fabrication"
+            data-category-label="Fabrication"
+            data-title="Structural frame fabrication"
+            data-description="Frames, supports and platforms where cumulative dimensional error decides whether erection goes smoothly."
+            data-scope="Connection detailing reviewed before cutting|Material traceability where the specification requires it|Dimensional control through fit-up|Marking and identification for site assembly"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=900&q=80"
+                alt="Interior of an industrial hall with exposed structural steel columns"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Fabrication</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Structural frame fabrication
+                </button>
+              </h3>
+              <p>Frames, supports and platforms where cumulative dimensional error decides whether erection goes smoothly.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="fabrication"
+            data-category-label="Fabrication"
+            data-title="Process equipment and plant assembly"
+            data-description="Fabricated assemblies that sit inside a process line and have to suit the duty they are built for."
+            data-scope="Drawing and specification review against the duty|Material grade confirmed before procurement|Welding to the applicable standard for the joint|Inspection records collected as work proceeds"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=900&q=80"
+                alt="Industrial process plant with pipework and structural steelwork"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Fabrication</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Process equipment and plant assembly
+                </button>
+              </h3>
+              <p>Fabricated assemblies that sit inside a process line and have to suit the duty they are built for.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="fabrication"
+            data-category-label="Fabrication"
+            data-title="Fabricated stock and component handling"
+            data-description="Batch fabricated items where identification, protection and despatch control matter as much as the work itself."
+            data-scope="Batch identification and part marking|Surface protection appropriate to storage|Packing suited to transport and handling|Despatch documentation for the scope"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=900&q=80"
+                alt="Industrial warehouse racking stacked with palletised stock"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Fabrication</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Fabricated stock and component handling
+                </button>
+              </h3>
+              <p>Batch fabricated items where identification, protection and despatch control matter as much as the work itself.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="spools"
+            data-category-label="Pipe Spools &amp; Bends"
+            data-title="Pipe spool and pump arrangement"
+            data-description="Spools and the fittings around them, where site fit-up depends entirely on dimensional control in the shop."
+            data-scope="Spool drawings reviewed for buildability and handling|End preparation to the agreed joint detail|Dimensional check before despatch|Spool numbering to match the erection sequence"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80"
+                alt="Fabricated pipework and pumps installed in a process plant"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Pipe Spools &amp; Bends</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Pipe spool and pump arrangement
+                </button>
+              </h3>
+              <p>Spools and the fittings around them, where site fit-up depends entirely on dimensional control in the shop.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="spools"
+            data-category-label="Pipe Spools &amp; Bends"
+            data-title="Plant piping network"
+            data-description="Larger piping scope where routing, supports and bend method all interact."
+            data-scope="Bend method selected by radius, material and wall thickness|Support and guide positions confirmed against the route|Weld map and inspection extent agreed up front|Documentation assembled for handover"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=900&q=80"
+                alt="Industrial plant beside water with stacks and pipework"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Pipe Spools &amp; Bends</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Plant piping network
+                </button>
+              </h3>
+              <p>Larger piping scope where routing, supports and bend method all interact.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cnc"
+            data-category-label="CNC Machining"
+            data-title="Precision tooling and cutter set-up"
+            data-description="The tooling decisions behind a close-tolerance component, made before the first cut."
+            data-scope="Tolerance and surface finish confirmed as achievable|Material condition reviewed for machinability|Work holding and datum strategy agreed|Dimensional inspection against the drawing"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=900&q=80"
+                alt="Precision cutting tools and drill bits laid out in a tool roll"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">CNC Machining</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Precision tooling and cutter set-up
+                </button>
+              </h3>
+              <p>The tooling decisions behind a close-tolerance component, made before the first cut.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cnc"
+            data-category-label="CNC Machining"
+            data-title="Machined mechanical assembly"
+            data-description="Machined parts that have to work together, where fit between components is the real requirement."
+            data-scope="Mating dimensions reviewed across the assembly|Tolerance stack considered rather than part-by-part|Trial fit before final finishing where useful|Assembly and functional check as agreed"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80"
+                alt="Close-up of a mechanical assembly with drive belts and pulleys"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">CNC Machining</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Machined mechanical assembly
+                </button>
+              </h3>
+              <p>Machined parts that have to work together, where fit between components is the real requirement.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cutting"
+            data-category-label="Cutting &amp; Forming"
+            data-title="Profile cutting and grinding"
+            data-description="Getting material to size and shape, with the cutting method chosen to suit thickness and material."
+            data-scope="Cutting method selected for thickness and material|Nesting to make sensible use of plate|Edge condition and dressing as specified|Heat input considered where it affects the material"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=80"
+                alt="Industrial workshop with sparks from metal cutting and fabrication work"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Cutting &amp; Forming</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Profile cutting and grinding
+                </button>
+              </h3>
+              <p>Getting material to size and shape, with the cutting method chosen to suit thickness and material.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="cutting"
+            data-category-label="Cutting &amp; Forming"
+            data-title="Hot work at the bench"
+            data-description="Bench-level cutting, dressing and preparation feeding the next operation."
+            data-scope="Preparation to the required joint geometry|Dimensional check before the next operation|Hot work controls appropriate to the area|Consumables matched to the parent material"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80"
+                alt="Welding sparks flying from a steel joint"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Cutting &amp; Forming</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Hot work at the bench
+                </button>
+              </h3>
+              <p>Bench-level cutting, dressing and preparation feeding the next operation.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="welding"
+            data-category-label="Welding &amp; Assembly"
+            data-title="Mechanised assembly environment"
+            data-description="Assembly work where repeatability and sequence control drive the outcome."
+            data-scope="Assembly sequence defined before work starts|Fixtures and jigs where repeatability requires them|In-process checks at agreed points|Records appropriate to the assembly"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=900&q=80"
+                alt="Automated industrial assembly line with robotic equipment"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Welding &amp; Assembly</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Mechanised assembly environment
+                </button>
+              </h3>
+              <p>Assembly work where repeatability and sequence control drive the outcome.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="welding"
+            data-category-label="Welding &amp; Assembly"
+            data-title="Assembly and fit-up bay"
+            data-description="Shop-floor assembly and fit-up ahead of final joining or despatch."
+            data-scope="Fit-up checked against the drawing before welding|Distortion control considered in the sequence|Qualified personnel for the joints involved|Final dimensional check after joining"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1551522435-a13afa10f103?auto=format&fit=crop&w=900&q=80"
+                alt="Workshop interior with vehicle lifts and workshop equipment"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Welding &amp; Assembly</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Assembly and fit-up bay
+                </button>
+              </h3>
+              <p>Shop-floor assembly and fit-up ahead of final joining or despatch.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="welding"
+            data-category-label="Welding &amp; Assembly"
+            data-title="Panel assembly and termination"
+            data-description="Assembly work that sits between mechanical scope and technical systems."
+            data-scope="Interfaces with mechanical and electrical scope agreed|Termination and labelling to the agreed schedule|Functional check against the design intent|As-built records where they are in scope"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80"
+                alt="Worker in a hard hat and safety glasses working on an industrial control enclosure"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Welding &amp; Assembly</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Panel assembly and termination
+                </button>
+              </h3>
+              <p>Assembly work that sits between mechanical scope and technical systems.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="installation"
+            data-category-label="Industrial Installations"
+            data-title="Site installation support"
+            data-description="Work carried out on site, where access and sequence shape what is actually possible."
+            data-scope="Access, permit and safety constraints raised at review|Installation sequence agreed with the site team|Trades matched to the qualification required|Progress reported through a single interface"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+                alt="Site team working together on steel reinforcement installation"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Industrial Installations</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Site installation support
+                </button>
+              </h3>
+              <p>Work carried out on site, where access and sequence shape what is actually possible.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="installation"
+            data-category-label="Industrial Installations"
+            data-title="Site progress and coordination"
+            data-description="Coordination across several activities happening in the same space at the same time."
+            data-scope="Interfaces between trades identified in advance|Sequence adjusted as site conditions change|Early notice where the programme is affected|Documentation collected as work completes"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
+                alt="Aerial view of an active construction site"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Industrial Installations</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Site progress and coordination
+                </button>
+              </h3>
+              <p>Coordination across several activities happening in the same space at the same time.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="installation"
+            data-category-label="Industrial Installations"
+            data-title="Structural erection support"
+            data-description="Erection work where lifting, temporary support and sequence have to be planned together."
+            data-scope="Lift and temporary support requirements reviewed|Erection sequence confirmed before mobilisation|Dimensional survey at agreed hold points|Handover against the agreed scope"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=80"
+                alt="Large construction project with tower cranes against an overcast sky"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Industrial Installations</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Structural erection support
+                </button>
+              </h3>
+              <p>Erection work where lifting, temporary support and sequence have to be planned together.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="installation"
+            data-category-label="Industrial Installations"
+            data-title="Energy infrastructure support"
+            data-description="Repetitive installation scope where consistency across many units is the challenge."
+            data-scope="Standard details agreed before repetition begins|Fixing and support method confirmed on site|Sample inspection before full roll-out|Consistency checks across the installed quantity"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=900&q=80"
+                alt="Rows of solar panels at sunset"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Industrial Installations</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Energy infrastructure support
+                </button>
+              </h3>
+              <p>Repetitive installation scope where consistency across many units is the challenge.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          <article
+            class="gallery__card"
+            data-gallery-card
+            data-category="installation"
+            data-category-label="Industrial Installations"
+            data-title="Remote structure support"
+            data-description="Installation and support work at locations where access and logistics dominate the plan."
+            data-scope="Access and logistics assessed before commitment|Equipment and manpower planned around the location|Weather and working-window constraints allowed for|Documentation completed before demobilisation"
+          >
+            <div class="gallery__media">
+              <img
+                src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=900&q=80"
+                alt="Wind turbines on an open hillside"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="concept-label">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="gallery__cat">Industrial Installations</span>
+            </div>
+            <div class="gallery__body">
+              <h3>
+                <button class="gallery__trigger" type="button">
+                  Remote structure support
+                </button>
+              </h3>
+              <p>Installation and support work at locations where access and logistics dominate the plan.</p>
+              <span class="gallery__more">
+                View concept detail
+                <i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </article>
+          </div>
+
+          <p data-gallery-empty hidden>
+            No concept demonstrations match that filter. Choose
+            <strong>All</strong> to see every item.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Have a real requirement?</h2>
+            <p>
+              Share your project scope and let DICE coordinate an appropriate
+              technical and execution route.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Submit Your Requirement
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="industries.html"
+              >Industries &amp; applications</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Detail modal ================= -->
+      <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal__backdrop" data-modal-backdrop></div>
+        <div
+          class="modal__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <button
+            class="modal__close"
+            type="button"
+            data-modal-close
+            aria-label="Close concept detail"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <div class="modal__media">
+            <img data-modal-image src="" alt="" />
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__eyebrow">
+              <span class="concept-label concept-label--static">
+                <i class="icon" data-lucide="flask-conical" aria-hidden="true"></i>
+                Concept Demonstration
+              </span>
+              <span class="tag" data-modal-category></span>
+            </div>
+
+            <h2 id="modal-title" data-modal-title></h2>
+            <p class="lead" data-modal-description></p>
+
+            <div class="modal__scope">
+              <h3>Illustrative scope</h3>
+              <ul data-modal-scope></ul>
+            </div>
+
+            <div class="note mt-5">
+              <i class="icon" data-lucide="info" aria-hidden="true"></i>
+              <p>
+                This is an illustrative concept demonstration, not a completed
+                DICE project. The scope above describes how such work would
+                typically be approached. No customer, outcome or delivery claim
+                is made.
+              </p>
+            </div>
+
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="request-quote.html">
+                <i class="icon" data-lucide="send" aria-hidden="true"></i>
+                Submit a similar requirement
+              </a>
+              <button class="btn btn--outline" type="button" data-modal-close>
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+             </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+  </body>
+</html>

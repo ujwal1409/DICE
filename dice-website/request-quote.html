@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Request a Quote | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="Submit your engineering, fabrication, machining, execution or manpower requirement to DICE Engineering &amp; Consultancy for a demonstration technical review."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Request a Quote</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Submit your requirement</p>
+          <h1 id="page-title">Submit Your Requirement</h1>
+          <p>
+            Share your project scope and let DICE coordinate an appropriate
+            technical and execution route. The more detail you provide, the more
+            useful the technical review.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= Prototype notice ================= -->
+      <section class="section section--tight" aria-label="Prototype notice">
+        <div class="container container--narrow">
+          <div class="limits">
+            <div class="limits__head">
+              <i
+                class="icon"
+                data-lucide="alert-triangle"
+                aria-hidden="true"
+              ></i>
+              <h2>Demonstration form — nothing is transmitted</h2>
+            </div>
+            <p>
+              This is a working demonstration of an RFQ form. It has no backend,
+              so nothing you enter here reaches DICE.
+            </p>
+            <ul>
+              <li>
+                Submissions are saved in your own browser's local storage, on
+                this device only.
+              </li>
+              <li>
+                Selected documents stay in your browser session. They are never
+                uploaded, transmitted or stored.
+              </li>
+              <li>
+                No email is sent and no server receives anything.
+              </li>
+              <li>
+                Please use placeholder information rather than real personal or
+                commercial data.
+              </li>
+            </ul>
+            <p>
+              To send a real enquiry, email
+              <a href="mailto:dice.ec.2020@gmail.com">dice.ec.2020@gmail.com</a>
+              or call <a href="tel:+917203050180">+91-7203050180</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= The wizard ================= -->
+      <section
+        class="section section--tight"
+        id="rfq"
+        aria-labelledby="rfq-title"
+      >
+        <div class="container container--narrow">
+          <h2 class="visually-hidden" id="rfq-title">
+            Request for quote form
+          </h2>
+
+          <div
+            class="wizard"
+            id="rfq-wizard"
+            data-wizard
+            data-wizard-success="rfq-success"
+          >
+            <!-- Progress indicator -->
+            <ol
+              class="wizard__progress"
+              data-wizard-progress
+              aria-label="Form progress"
+            >
+              <li
+                class="wizard__dot"
+                data-step-dot="1"
+                data-step-label="Customer Details"
+              >
+                <span class="wizard__dot-num" aria-hidden="true">1</span>
+                <span class="wizard__dot-label">Customer Details</span>
+              </li>
+              <li
+                class="wizard__dot"
+                data-step-dot="2"
+                data-step-label="Project Requirement"
+              >
+                <span class="wizard__dot-num" aria-hidden="true">2</span>
+                <span class="wizard__dot-label">Project Requirement</span>
+              </li>
+              <li
+                class="wizard__dot"
+                data-step-dot="3"
+                data-step-label="Drawings &amp; Documents"
+              >
+                <span class="wizard__dot-num" aria-hidden="true">3</span>
+                <span class="wizard__dot-label">Drawings &amp; Documents</span>
+              </li>
+              <li
+                class="wizard__dot"
+                data-step-dot="4"
+                data-step-label="Review Your Requirement"
+              >
+                <span class="wizard__dot-num" aria-hidden="true">4</span>
+                <span class="wizard__dot-label">Review</span>
+              </li>
+              <li
+                class="wizard__dot"
+                data-step-dot="5"
+                data-step-label="Submit"
+              >
+                <span class="wizard__dot-num" aria-hidden="true">5</span>
+                <span class="wizard__dot-label">Submit</span>
+              </li>
+            </ol>
+
+            <p
+              class="wizard__status"
+              data-wizard-status
+              role="status"
+              aria-live="polite"
+            >
+              Step 1 of 5 — Customer Details
+            </p>
+
+            <div class="form-panel">
+              <form class="form" data-wizard-form novalidate>
+                <!-- ===== Step 1 — Customer Details ===== -->
+                <fieldset class="wizard__step" data-step="1">
+                  <legend class="wizard__legend">
+                    Step 1 of 5 — Customer Details
+                  </legend>
+                  <div class="wizard__step-head">
+                    <h3 data-step-heading>Customer Details</h3>
+                    <p>
+                      Who the enquiry is from, and where the project is located.
+                    </p>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="field">
+                      <label for="q-name">
+                        Full name <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-name"
+                        name="fullName"
+                        autocomplete="name"
+                        required
+                        data-validate="required min:2"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-company">
+                        Company name
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-company"
+                        name="company"
+                        autocomplete="organization"
+                        required
+                        data-validate="required min:2"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-email">
+                        Business email
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="q-email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        data-validate="required email"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-phone">
+                        Phone number
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <input
+                        type="tel"
+                        id="q-phone"
+                        name="phone"
+                        autocomplete="tel"
+                        data-validate="phone"
+                      />
+                      <p class="field__hint">
+                        Include the country code, for example +91.
+                      </p>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field--full">
+                      <label for="q-location">
+                        Country / project location
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-location"
+                        name="location"
+                        autocomplete="country-name"
+                        required
+                        data-validate="required min:2"
+                      />
+                      <p class="field__hint">
+                        Where the work is needed, or where delivery is required.
+                      </p>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- ===== Step 2 — Project Requirement ===== -->
+                <fieldset class="wizard__step" data-step="2" hidden>
+                  <legend class="wizard__legend">
+                    Step 2 of 5 — Project Requirement
+                  </legend>
+                  <div class="wizard__step-head">
+                    <h3 data-step-heading>Project Requirement</h3>
+                    <p>
+                      The technical detail. Anything you leave blank simply
+                      becomes a question at review stage.
+                    </p>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="field">
+                      <label for="q-category">
+                        Service category
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <select
+                        id="q-category"
+                        name="category"
+                        required
+                        data-validate="required"
+                      >
+                        <option value="">Select a category…</option>
+                        <option value="engineering-cad">
+                          Engineering &amp; CAD
+                        </option>
+                        <option value="fabrication">Fabrication</option>
+                        <option value="precision-manufacturing">
+                          Precision Manufacturing
+                        </option>
+                        <option value="specialist-execution">
+                          Specialist Execution
+                        </option>
+                        <option value="manpower">Manpower</option>
+                        <option value="technical-support">
+                          Technical Support
+                        </option>
+                        <option value="other">Other</option>
+                      </select>
+                      <p class="field__hint">
+                        Not sure? Choose Other and describe it below.
+                      </p>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-title">
+                        Project title
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-title"
+                        name="projectTitle"
+                        required
+                        data-validate="required min:3"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field--full">
+                      <label for="q-scope">
+                        Detailed scope or problem statement
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <textarea
+                        id="q-scope"
+                        name="scope"
+                        required
+                        data-validate="required min:20"
+                        placeholder="Describe what you need made, designed or executed — or describe the problem you are trying to solve."
+                      ></textarea>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-material">
+                        Material grade / specification / finish
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-material"
+                        name="material"
+                        placeholder="e.g. SS 316L, ASTM A106 Gr B, shot blast"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-quantity">
+                        Quantity or project scope
+                        <span class="req" aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-quantity"
+                        name="quantity"
+                        required
+                        data-validate="required"
+                        placeholder="e.g. 24 off, 1 assembly, 40 spools"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-tolerances">
+                        Required tolerances
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="q-tolerances"
+                        name="tolerances"
+                        placeholder="e.g. ±0.05 mm on bore, general ISO 2768-m"
+                      />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-delivery">
+                        Target delivery date
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <input type="date" id="q-delivery" name="deliveryDate" />
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field--full">
+                      <label for="q-quality">
+                        Quality and inspection requirements
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <textarea
+                        id="q-quality"
+                        name="quality"
+                        placeholder="Quality plan, inspection and test plan, witness points, acceptance criteria."
+                      ></textarea>
+                      <p class="field__hint">
+                        See
+                        <a href="quality-safety.html#requirements"
+                          >quality requirements</a
+                        >
+                        for what is useful to state here.
+                      </p>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field--full">
+                      <label for="q-nde">
+                        NDE and documentation requirements
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <textarea
+                        id="q-nde"
+                        name="nde"
+                        placeholder="NDE methods and extent, material traceability, weld records, handover documentation."
+                      ></textarea>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                      <label for="q-installation">
+                        Installation requirements
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <select id="q-installation" name="installation">
+                        <option value="">Select…</option>
+                        <option value="Not required">Not required</option>
+                        <option value="Supervision only">
+                          Supervision only
+                        </option>
+                        <option value="Full installation support">
+                          Full installation support
+                        </option>
+                        <option value="Manpower only">Manpower only</option>
+                        <option value="To be confirmed">To be confirmed</option>
+                      </select>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field field--full">
+                      <label for="q-notes">
+                        Additional notes
+                        <span class="field__optional">optional</span>
+                      </label>
+                      <textarea
+                        id="q-notes"
+                        name="notes"
+                        placeholder="Anything else that affects the scope, route or programme."
+                      ></textarea>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- ===== Step 3 — Drawings & Documents ===== -->
+                <fieldset class="wizard__step" data-step="3" hidden>
+                  <legend class="wizard__legend">
+                    Step 3 of 5 — Drawings and Documents
+                  </legend>
+                  <div class="wizard__step-head">
+                    <h3 data-step-heading>Drawings &amp; Documents</h3>
+                    <p>
+                      Attach drawings, specifications or photographs. This step
+                      is optional.
+                    </p>
+                  </div>
+
+                  <div class="dropzone" data-dropzone>
+                    <div class="dropzone__inner">
+                      <span class="dropzone__icon" aria-hidden="true">
+                        <i class="icon" data-lucide="upload-cloud"></i>
+                      </span>
+                      <p class="dropzone__title">
+                        Drag and drop your files here
+                      </p>
+                      <p class="dropzone__or">or</p>
+                      <input
+                        class="file-input visually-hidden"
+                        type="file"
+                        id="q-files"
+                        multiple
+                        accept=".pdf,.dwg,.dxf,.step,.stp,.jpg,.jpeg,.png"
+                        aria-describedby="q-files-hint"
+                        data-file-input
+                      />
+                      <label class="file-label btn btn--outline" for="q-files">
+                        <i
+                          class="icon"
+                          data-lucide="folder-open"
+                          aria-hidden="true"
+                        ></i>
+                        Choose files
+                      </label>
+                      <p class="dropzone__hint" id="q-files-hint">
+                        PDF, DWG, DXF, STEP (.step/.stp), JPG, JPEG, PNG
+                        &middot; maximum 10&nbsp;MB per file &middot; up to 5
+                        files
+                      </p>
+                    </div>
+                  </div>
+
+                  <p
+                    class="field__error"
+                    data-file-error
+                    role="alert"
+                    aria-live="assertive"
+                  ></p>
+
+                  <p class="filecount">
+                    <i class="icon" data-lucide="paperclip" aria-hidden="true"></i>
+                    <span data-file-count>0 of 5 files selected</span>
+                  </p>
+
+                  <ul class="filelist" data-file-list hidden></ul>
+
+                  <p class="filelist__empty" data-file-empty>
+                    <strong>No documents selected yet</strong>
+                    Drawings are optional, but a drawing or sketch usually makes
+                    the technical review far more useful.
+                  </p>
+
+                  <p class="visually-hidden" data-file-announce aria-live="polite"></p>
+
+                  <div class="note mt-6">
+                    <i class="icon" data-lucide="shield" aria-hidden="true"></i>
+                    <p>
+                      <strong>
+                        Files selected in this prototype remain in your browser
+                        session and are not uploaded or transmitted to DICE.
+                      </strong>
+                      Only the filename and file size are recorded in the
+                      demonstration summary. File contents are never read,
+                      stored or sent anywhere.
+                    </p>
+                  </div>
+                </fieldset>
+
+                <!-- ===== Step 4 — Review ===== -->
+                <fieldset
+                  class="wizard__step"
+                  data-step="4"
+                  data-step-review
+                  hidden
+                >
+                  <legend class="wizard__legend">
+                    Step 4 of 5 — Review your requirement
+                  </legend>
+                  <div class="wizard__step-head">
+                    <h3 data-step-heading>Review Your Requirement</h3>
+                    <p>
+                      Check everything below. Use the Edit buttons to go back to
+                      a step — your entries are preserved.
+                    </p>
+                  </div>
+
+                  <div class="review" data-review>
+                    <!-- Generated by js/enquiry.js when this step opens -->
+                  </div>
+                </fieldset>
+
+                <!-- ===== Step 5 — Submit ===== -->
+                <fieldset class="wizard__step" data-step="5" hidden>
+                  <legend class="wizard__legend">
+                    Step 5 of 5 — Submit
+                  </legend>
+                  <div class="wizard__step-head">
+                    <h3 data-step-heading>Submit</h3>
+                    <p>
+                      One last confirmation before the demonstration submission
+                      is recorded.
+                    </p>
+                  </div>
+
+                  <div class="limits">
+                    <div class="limits__head">
+                      <i
+                        class="icon"
+                        data-lucide="alert-triangle"
+                        aria-hidden="true"
+                      ></i>
+                      <h4>What happens when you submit</h4>
+                    </div>
+                    <ul>
+                      <li>
+                        A demonstration reference number is generated, for
+                        example DICE-DEMO-1001.
+                      </li>
+                      <li>
+                        The field values and your selected filenames and sizes
+                        are saved to this browser's local storage.
+                      </li>
+                      <li>
+                        Nothing is emailed, uploaded or transmitted. DICE does
+                        not receive this.
+                      </li>
+                      <li>
+                        File contents are not stored — only names and sizes.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="form-legalbox mt-6">
+                    <div class="field">
+                      <label class="checkbox" for="q-ack">
+                        <input
+                          type="checkbox"
+                          id="q-ack"
+                          name="acknowledged"
+                          required
+                          data-validate="required"
+                        />
+                        <span>
+                          I understand this is a demonstration submission, that
+                          it is stored only in my own browser, and that it is
+                          not transmitted to DICE Engineering &amp;
+                          Consultancy.
+                          <span class="req" aria-hidden="true">*</span>
+                        </span>
+                      </label>
+                      <p class="field__error" aria-live="polite"></p>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <p
+                  class="form-status"
+                  data-form-status
+                  aria-live="polite"
+                ></p>
+
+                <!-- Navigation -->
+                <div class="wizard__nav">
+                  <button
+                    class="btn btn--outline"
+                    type="button"
+                    data-wizard-prev
+                    hidden
+                  >
+                    <i
+                      class="icon"
+                      data-lucide="arrow-left"
+                      aria-hidden="true"
+                    ></i>
+                    Previous
+                  </button>
+                  <button class="btn btn--primary" type="button" data-wizard-next>
+                    Next
+                    <i
+                      class="icon"
+                      data-lucide="arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <button
+                    class="btn btn--primary btn--lg"
+                    type="submit"
+                    data-wizard-submit
+                    hidden
+                  >
+                    <i class="icon" data-lucide="send" aria-hidden="true"></i>
+                    Submit Demonstration Enquiry
+                  </button>
+                  <button
+                    class="btn btn--outline btn--sm"
+                    type="button"
+                    data-wizard-reset
+                  >
+                    <i
+                      class="icon"
+                      data-lucide="rotate-ccw"
+                      aria-hidden="true"
+                    ></i>
+                    Reset form
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- ================= Success screen ================= -->
+          <div
+            class="success-panel"
+            id="rfq-success"
+            role="region"
+            aria-label="Demonstration submission confirmation"
+            hidden
+          >
+            <span class="success-panel__icon" aria-hidden="true">
+              <i class="icon" data-lucide="check"></i>
+            </span>
+            <h2>Demonstration enquiry recorded</h2>
+            <p class="lead">
+              Your requirement has been captured by this prototype and given a
+              demonstration reference number.
+            </p>
+
+            <div class="success-panel__ref">
+              <span>Demonstration reference</span>
+              <strong data-ref>DICE-DEMO-0000</strong>
+            </div>
+
+            <div class="limits">
+              <div class="limits__head">
+                <i
+                  class="icon"
+                  data-lucide="alert-triangle"
+                  aria-hidden="true"
+                ></i>
+                <h3>This is a local demonstration submission</h3>
+              </div>
+              <p>
+                <strong>
+                  This enquiry has not been sent to DICE. It is a local
+                  demonstration submission only.
+                </strong>
+              </p>
+              <ul>
+                <li>
+                  No email was sent and no server received anything.
+                </li>
+                <li>
+                  <strong>
+                    Your selected documents have not been transmitted.
+                  </strong>
+                  They stayed in your browser session for the duration of this
+                  form, and only their filenames and sizes were recorded.
+                </li>
+                <li>
+                  The record is stored in this browser's local storage, on this
+                  device, and does not reach the actual DICE business.
+                </li>
+              </ul>
+              <p data-storage-note>
+                You can view saved demonstration records on the
+                <a href="demo-admin.html">demo admin page</a>, or clear them
+                below.
+              </p>
+              <p>
+                To submit a real enquiry, email
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+                or call <a href="tel:+917203050180">+91-7203050180</a>.
+              </p>
+            </div>
+
+            <div data-success-files-wrap hidden>
+              <p class="subhead">Documents you selected (not transmitted)</p>
+              <ul class="success-panel__files" data-success-files></ul>
+            </div>
+
+            <div class="success-panel__actions">
+              <button class="btn btn--primary" type="button" data-start-another>
+                <i class="icon" data-lucide="rotate-ccw" aria-hidden="true"></i>
+                Start another enquiry
+              </button>
+              <a class="btn btn--outline" href="demo-admin.html"
+                >View demo records</a
+              >
+              <a class="btn btn--outline" href="index.html">Back to home</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Demo data management ================= -->
+      <section
+        class="section section--grey"
+        id="demo-data"
+        aria-labelledby="demo-data-title"
+      >
+        <div class="container container--narrow">
+          <div class="section-head">
+            <p class="eyebrow">Your browser, your data</p>
+            <h2 id="demo-data-title">Demonstration data stored locally</h2>
+            <p class="lead">
+              Everything this prototype saves lives in your own browser. It is
+              not synchronised, not backed up, and not visible to DICE or
+              anyone else.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="stat">
+              <span class="stat__label">Saved demonstration enquiries</span>
+              <span class="stat__value">
+                <span data-demo-count>0</span> record(s) in this browser
+              </span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Storage location</span>
+              <span class="stat__value">This browser only</span>
+            </div>
+          </div>
+
+          <div class="form-legalbox mt-6">
+            <p class="mb-0">
+              <strong>Clear Demo Data</strong> permanently deletes every
+              demonstration enquiry saved by this prototype in this browser,
+              along with the reference number counter. You will be asked to
+              confirm first. This cannot be undone.
+            </p>
+            <div class="cluster">
+              <button class="btn btn--navy" type="button" data-clear-demo>
+                <i class="icon" data-lucide="trash-2" aria-hidden="true"></i>
+                Clear Demo Data
+              </button>
+              <a class="btn btn--outline" href="demo-admin.html"
+                >View saved records</a
+              >
+            </div>
+            <p
+              class="form-status form-status--ok is-visible"
+              data-clear-demo-status
+              role="status"
+              hidden
+            ></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Prefer to talk it through?</h2>
+            <p>
+              Not every requirement fits a form. Email or call and describe the
+              problem — the technical review comes first either way.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html">
+              <i class="icon" data-lucide="message-square" aria-hidden="true"></i>
+              Contact Us
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="how-it-works.html"
+              >See the process</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+            </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/enquiry.js" defer></script>
+  </body>
+</html>

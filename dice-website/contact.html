@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | DICE Engineering &amp; Consultancy</title>
+    <meta
+      name="description"
+      content="Contact DICE Engineering &amp; Consultancy by email or phone, or send a general enquiry. Connecting your requirement to Reliable Solutions."
+    />
+    <meta name="theme-color" content="#0B1D2C" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Progressive-enhancement flag, set before first paint so scroll-reveal
+         never causes a flash of unstyled content. Without JS nothing hides. -->
+    <script>
+      document.documentElement.classList.add("js");
+      // Safety net: if js/main.js never runs, drop the flag so no content
+      // can stay hidden behind an animation that will never start.
+      setTimeout(function () {
+        if (!window.DICE) document.documentElement.classList.remove("js");
+      }, 3000);
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/dice-icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/dice-icon-180.png" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ================= Utility strip ================= -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__tagline">
+          <i class="icon" data-lucide="zap" aria-hidden="true"></i>
+          Connecting your requirement to Reliable Solutions
+        </p>
+        <div class="topbar__links">
+          <a href="mailto:dice.ec.2020@gmail.com">
+            <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+            <span class="topbar__hide-xs">dice.ec.2020@gmail.com</span>
+            <span class="visually-hidden">Email DICE</span>
+          </a>
+          <a href="tel:+917203050180">
+            <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+            <span>+91-7203050180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Sticky header ================= -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a
+          class="wordmark"
+          href="index.html"
+          aria-label="DICE Engineering and Consultancy — home"
+        >
+          <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+          <span class="wordmark__text">
+            <span class="wordmark__name">DICE</span>
+            <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open main menu"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <div class="nav__drawer-head">
+            <span class="eyebrow">Menu</span>
+            <p>Your Requirement. Our Engineering. The Right Partner.</p>
+          </div>
+          <button
+            class="nav__close"
+            id="nav-close"
+            type="button"
+            aria-label="Close main menu"
+          >
+            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="industries.html"
+                aria-label="Industries and Applications"
+                >Industries</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="projects.html"
+                aria-label="Projects and Gallery"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav__item nav__item--has-menu">
+              <button
+                class="nav__link"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                More
+                <i
+                  class="icon nav__toggle-chevron"
+                  data-lucide="chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="nav__submenu">
+                <a href="partner-network.html">
+                  <i class="icon" data-lucide="network" aria-hidden="true"></i>
+                  Partner Network
+                </a>
+                <a href="quality-safety.html">
+                  <i
+                    class="icon"
+                    data-lucide="shield-check"
+                    aria-hidden="true"
+                  ></i>
+                  Quality &amp; Safety
+                </a>
+                <a href="manpower-international.html">
+                  <i class="icon" data-lucide="globe" aria-hidden="true"></i>
+                  Manpower &amp; International Support
+                </a>
+                <a href="contact.html">
+                  <i
+                    class="icon"
+                    data-lucide="message-square"
+                    aria-hidden="true"
+                  ></i>
+                  Contact Us
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Get a Quote
+            </a>
+            <p>
+              Share your scope and we will coordinate an appropriate technical
+              route.
+            </p>
+          </div>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn--primary btn--sm" href="request-quote.html"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ================= Page hero ================= -->
+      <section
+        class="page-hero"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="page-title"
+      >
+        <div class="page-hero__bg" aria-hidden="true"></div>
+        <div class="page-hero__scrim" aria-hidden="true"></div>
+        <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">Contact Us</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow">Connecting your requirement to Reliable Solutions</p>
+          <h1 id="page-title">Contact DICE</h1>
+          <p>
+            Send your requirement, drawings or questions. They will be reviewed
+            technically before any route is proposed.
+          </p>
+          <div class="page-hero__actions">
+            <a class="btn btn--primary" href="request-quote.html"
+              >Request a Quote</a
+            >
+            <a class="btn btn--ghost-light" href="#enquiry-form"
+              >Send an enquiry</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Contact details ================= -->
+      <section class="section" id="details" aria-labelledby="details-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Direct contact</p>
+            <h2 id="details-title">DICE Engineering &amp; Consultancy</h2>
+            <p class="lead">
+              The quickest route is email, with any drawings or specifications
+              attached.
+            </p>
+          </div>
+
+          <div class="grid grid--2 grid--gap-lg" data-reveal-group>
+            <div class="contact-card reveal">
+              <span class="icon-badge">
+                <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-card__label">Email</span>
+                <p class="contact-card__value mb-0">
+                  <a href="mailto:dice.ec.2020@gmail.com"
+                    >dice.ec.2020@gmail.com</a
+                  >
+                </p>
+                <span class="contact-card__note">
+                  Attach drawings, specifications or a scope document.
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-card reveal">
+              <span class="icon-badge icon-badge--orange">
+                <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-card__label">Phone</span>
+                <p class="contact-card__value mb-0">
+                  <a href="tel:+917203050180">+91-7203050180</a>
+                </p>
+                <span class="contact-card__note">
+                  Useful when it is quicker to talk a requirement through.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="note mt-6">
+            <i class="icon" data-lucide="info" aria-hidden="true"></i>
+            <p>
+              This prototype does not publish a physical address or map
+              location. Company name, email address and phone number above are
+              the only contact details given.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Enquiry form ================= -->
+      <section
+        class="section section--grey"
+        id="enquiry-form"
+        aria-labelledby="form-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div class="split__content">
+              <div data-form-wrap>
+                <div class="form-panel">
+                  <div class="section-head" style="margin-bottom: var(--sp-6)">
+                    <p class="eyebrow">General enquiry</p>
+                    <h2 id="form-title">Send us a message</h2>
+                    <p>
+                      For a detailed technical requirement, the
+                      <a href="request-quote.html">Request a Quote</a> form
+                      captures far more useful information.
+                    </p>
+                  </div>
+
+                  <form
+                    class="form"
+                    id="contact-form"
+                    data-enquiry-form="contact"
+                    data-success="contact-success"
+                    novalidate
+                  >
+                    <div class="form-grid">
+                      <div class="field">
+                        <label for="c-name">
+                          Full name <span class="req" aria-hidden="true">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="c-name"
+                          name="fullName"
+                          autocomplete="name"
+                          required
+                          data-validate="required min:2"
+                        />
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+
+                      <div class="field">
+                        <label for="c-company">
+                          Company name
+                          <span class="field__optional">optional</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="c-company"
+                          name="company"
+                          autocomplete="organization"
+                        />
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+
+                      <div class="field">
+                        <label for="c-email">
+                          Email address
+                          <span class="req" aria-hidden="true">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          id="c-email"
+                          name="email"
+                          autocomplete="email"
+                          required
+                          data-validate="required email"
+                        />
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+
+                      <div class="field">
+                        <label for="c-phone">
+                          Phone number
+                          <span class="field__optional">optional</span>
+                        </label>
+                        <input
+                          type="tel"
+                          id="c-phone"
+                          name="phone"
+                          autocomplete="tel"
+                          data-validate="phone"
+                        />
+                        <p class="field__hint">
+                          Include the country code, for example +91.
+                        </p>
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+
+                      <div class="field field--full">
+                        <label for="c-subject">
+                          Subject <span class="req" aria-hidden="true">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="c-subject"
+                          name="subject"
+                          required
+                          data-validate="required min:3"
+                        />
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+
+                      <div class="field field--full">
+                        <label for="c-message">
+                          Message <span class="req" aria-hidden="true">*</span>
+                        </label>
+                        <textarea
+                          id="c-message"
+                          name="message"
+                          required
+                          data-validate="required min:15"
+                          placeholder="Describe your requirement, the problem you are trying to solve, or the question you have."
+                        ></textarea>
+                        <p class="field__error" aria-live="polite"></p>
+                      </div>
+                    </div>
+
+                    <p class="form-status" data-form-status aria-live="polite"></p>
+
+                    <div class="note">
+                      <i class="icon" data-lucide="info" aria-hidden="true"></i>
+                      <p>
+                        <strong>Demonstration form.</strong> This prototype has
+                        no backend. Submitting records the enquiry in your own
+                        browser only — it is not transmitted to DICE and no
+                        email is sent.
+                      </p>
+                    </div>
+
+                    <div class="cluster">
+                      <button class="btn btn--primary btn--lg" type="submit">
+                        <i
+                          class="icon"
+                          data-lucide="send"
+                          aria-hidden="true"
+                        ></i>
+                        Submit Enquiry
+                      </button>
+                      <button class="btn btn--outline" type="reset">
+                        Clear form
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Confirmation screen -->
+              <div
+                class="success-panel"
+                id="contact-success"
+                role="region"
+                aria-label="Enquiry confirmation"
+                hidden
+              >
+                <span class="success-panel__icon" aria-hidden="true">
+                  <i class="icon" data-lucide="check"></i>
+                </span>
+                <h2>Enquiry recorded in this prototype</h2>
+                <p class="lead">
+                  Thank you — your enquiry has been captured by the
+                  demonstration form.
+                </p>
+
+                <div class="success-panel__ref">
+                  <span>Demonstration reference</span>
+                  <strong data-ref>DICE-DEMO-0000</strong>
+                </div>
+
+                <div class="limits">
+                  <div class="limits__head">
+                    <i
+                      class="icon"
+                      data-lucide="alert-triangle"
+                      aria-hidden="true"
+                    ></i>
+                    <h3>This is a demonstration submission</h3>
+                  </div>
+                  <p>
+                    <strong>
+                      This is a demonstration submission. Your enquiry has not
+                      been transmitted to DICE.
+                    </strong>
+                  </p>
+                  <ul>
+                    <li>No email has been sent to anyone.</li>
+                    <li>
+                      The record is saved in this browser's local storage only,
+                      on this device.
+                    </li>
+                    <li>
+                      Nothing has reached the actual DICE business or any
+                      server.
+                    </li>
+                  </ul>
+                  <p>
+                    To contact DICE for real, use
+                    <a href="mailto:dice.ec.2020@gmail.com"
+                      >dice.ec.2020@gmail.com</a
+                    >
+                    or
+                    <a href="tel:+917203050180">+91-7203050180</a>.
+                  </p>
+                </div>
+
+                <div class="success-panel__actions">
+                  <button class="btn btn--primary" type="button" data-start-another>
+                    <i class="icon" data-lucide="rotate-ccw" aria-hidden="true"></i>
+                    Send another enquiry
+                  </button>
+                  <a class="btn btn--outline" href="request-quote.html"
+                    >Request a Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar: quick links -->
+            <div class="split__media">
+              <h2 class="footer-heading" style="color: var(--c-navy)">
+                Quick links
+              </h2>
+              <nav class="quick-links" aria-label="Quick links">
+                <a href="services.html">
+                  <i class="icon" data-lucide="layers" aria-hidden="true"></i>
+                  <span>Services</span>
+                  <span>Six capability categories</span>
+                </a>
+                <a href="how-it-works.html">
+                  <i class="icon" data-lucide="route" aria-hidden="true"></i>
+                  <span>How It Works</span>
+                  <span>The five-step process</span>
+                </a>
+                <a href="request-quote.html">
+                  <i class="icon" data-lucide="send" aria-hidden="true"></i>
+                  <span>Request a Quote</span>
+                  <span>Detailed RFQ form</span>
+                </a>
+              </nav>
+
+              <div class="stack mt-6">
+                <div class="stat">
+                  <span class="stat__label">Tagline</span>
+                  <span class="stat__value">
+                    Connecting your requirement to Reliable Solutions
+                  </span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">What helps a reply</span>
+                  <span class="stat__value">
+                    Drawings, quantities, materials, timeline
+                  </span>
+                </div>
+              </div>
+
+              <div class="note mt-6">
+                <i class="icon" data-lucide="shield" aria-hidden="true"></i>
+                <p>
+                  Please do not enter real personal or commercial information
+                  into this prototype. Anything submitted is stored
+                  unencrypted in your own browser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Final CTA ================= -->
+      <section
+        class="cta"
+        style="
+          --hero-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');
+        "
+        aria-labelledby="cta-title"
+      >
+        <div class="cta__bg" aria-hidden="true"></div>
+        <div class="cta__scrim" aria-hidden="true"></div>
+        <div class="container cta__inner">
+          <div class="cta__text">
+            <h2 id="cta-title">Have a detailed requirement?</h2>
+            <p>
+              The Request a Quote form captures scope, materials, tolerances,
+              quality requirements and drawings in one place.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="request-quote.html">
+              <i class="icon" data-lucide="send" aria-hidden="true"></i>
+              Submit Your Requirement
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="services.html"
+              >Explore Our Capabilities</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div class="site-footer__brand">
+          <a
+            class="wordmark wordmark--light"
+            href="index.html"
+            aria-label="DICE Engineering and Consultancy — home"
+          >
+            <img class="wordmark__logo" src="assets/images/dice-logo-mark.png" alt="" width="160" height="166" data-no-placeholder />
+            <span class="wordmark__text">
+              <span class="wordmark__name">DICE</span>
+              <span class="wordmark__sub">Engineering &amp; Consultancy</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">
+            Connecting your requirement to Reliable Solutions.
+          </p>
+          <p class="site-footer__blurb">
+            DICE Engineering &amp; Consultancy coordinates engineering
+            expertise, specialist partners, manufacturing capabilities and
+            execution support through a single customer interface.
+          </p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Website pages">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries &amp; Applications</a></li>
+            <li><a href="projects.html">Projects &amp; Gallery</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="partner-network.html">Partner Network</a></li>
+            <li><a href="quality-safety.html">Quality &amp; Safety</a></li>
+            <li>
+              <a href="manpower-international.html"
+                >Manpower &amp; International Support</a
+              >
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Service categories">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="services.html#engineering-cad">Engineering &amp; CAD</a>
+            </li>
+            <li><a href="services.html#fabrication">Fabrication</a></li>
+            <li>
+              <a href="services.html#precision-manufacturing"
+                >Precision Manufacturing</a
+              >
+            </li>
+            <li>
+              <a href="services.html#specialist-execution"
+                >Specialist Execution</a
+              >
+            </li>
+            <li><a href="services.html#manpower">Manpower</a></li>
+            <li>
+              <a href="services.html#technical-support">Technical Support</a>
+            </li>
+            <li><a href="request-quote.html">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="footer-heading">Contact</h2>
+          <div class="footer-contact">
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Email</span>
+                <a href="mailto:dice.ec.2020@gmail.com"
+                  >dice.ec.2020@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="footer-contact__item">
+              <i class="icon" data-lucide="phone" aria-hidden="true"></i>
+              <span class="footer-contact__text">
+                <span class="footer-contact__label">Phone</span>
+                <a href="tel:+917203050180">+91-7203050180</a>
+              </span>
+            </p>
+          </div>
+          <a class="btn btn--primary btn--sm mt-5" href="request-quote.html"
+            >Submit Your Requirement</a
+          >
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <p class="mb-0">
+            &copy; <span data-current-year>2026</span> DICE Engineering &amp;
+            Consultancy. All rights reserved.
+          </p>
+          <nav class="site-footer__legal" aria-label="Prototype links">
+            <a href="request-quote.html">Request a Quote</a>
+            <a href="contact.html">Contact</a>
+            <a href="demo-admin.html">Demo Admin</a>
+          </nav>
+          <p class="site-footer__disclaimer">
+                      </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-top"
+      id="scroll-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Optional icon library: the site degrades to CSS marks without it -->
+    <script
+      src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/enquiry.js" defer></script>
+  </body>
+</html>

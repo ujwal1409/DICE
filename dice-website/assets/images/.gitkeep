@@ -1,0 +1,8 @@
+Local photography for the DICE prototype goes here.
+
+Drop files in this folder and reference them with a relative path, for example:
+  <img src="assets/images/fabrication-bay.jpg" alt="Fabrication bay" />
+
+Until local files are supplied, the pages use external photography URLs.
+If any remote image fails to load, js/main.js swaps in a branded CSS
+placeholder so the layout and colour contrast stay intact.
